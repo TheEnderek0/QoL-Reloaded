@@ -1,0 +1,385 @@
+"ID"		"QOL_DECO"
+"Name"		"QOL Items"
+"Desc"      "Some items from the QOL instance collection."
+
+
+"Item"
+	{
+	"ID" "QOL_CUTOUT_GRASS"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"	"cutout_clean"
+			"BEE2_OVERGROWN" "cutout_grass"
+			}
+		}
+	}
+
+"BrushTemplate"
+	{
+	"ID"   "QOL_CUTOUT_0_CLEAN"
+	"File" "cutout_0_template.vmf"
+	}
+"BrushTemplate"
+	{
+	"ID"   "QOL_CUTOUT_1_CLEAN"
+	"File" "cutout_1_template.vmf"
+	}
+"BrushTemplate"
+	{
+	"ID"   "QOL_CUTOUT_2_CLEAN"
+	"File" "cutout_2_template.vmf"
+	}
+
+//Templates for OVER broken floor
+"BrushTemplate"
+	{
+	"ID"   "QOL_BR_FLOOR_NOW"
+	"File" "over_broken_floor/no_water.vmf"
+	}
+"BrushTemplate"
+	{
+	"ID"   "QOL_BR_FLOOR_W"
+	"File" "over_broken_floor/water.vmf"
+	}
+"BrushTemplate"
+	{
+	"ID"   "QOL_OVER_D_WALL_2"
+	"File" "over_broken_wall_2x2.vmf"
+	}
+"BrushTemplate"
+	{
+	"ID"   "QOL_M_BTS_2X1"
+	"File" "mini_bts/bts_hole_2x1.vmf"
+	}
+"BrushTemplate"
+	{
+	"ID"   "QOL_M_BTS_2X1_B"
+	"File" "mini_bts/bts_hole_2x1_b.vmf"
+	}
+"BrushTemplate"
+	{
+	"ID"   "QOL_BTS_HOLE_2X3"
+	"File" "mini_bts/bts_hole_2x3.vmf"
+	}
+"BrushTemplate"
+	{
+	"ID"   "QOL_BTS_HOLE_7X6"
+	"File" "mini_bts/bts_hole_7x6.vmf"
+	}
+"BrushTemplate"
+	{
+	"ID"   "QOL_OPEN_CEILING"
+	"File" "bts_ceiling.vmf"
+	}
+//"Item"
+//	{
+//	"ID" "QOL_BROKEN_SURF_1X1"
+//	"Version"
+//		{
+//		"Styles"
+//			{
+//			"BEE2_CLEAN"	"broken_surf_1x1"
+//			"BEE2_OVERGROWN"
+//				{
+//					"Folder" "broken_surf_1x1"
+//					"Instances"
+//					{
+//					"0" "instances/BEE2/over/items/Broken Wall/wall/1x1_0.vmf"
+//					"1"  "instances/BEE2/over/items/Broken Wall/wall/1x1_1.vmf"
+//					"2" "instances/BEE2/over/items/Broken Wall/wall/1x1_2.vmf"
+//					"3" "instances/BEE2/over/items/Broken Wall/ceil/1x1_0.vmf"
+//					"4" "instances/BEE2/over/items/Broken Wall/ceil/1x1_1.vmf"
+//					}
+//				}
+//			}
+//		}
+//	}
+//"Item"
+//	{
+//	"ID" "QOL_ACCENT_LIGHTS"
+//	"Version"
+//		{
+//		"Styles"
+//			{
+//			"BEE2_CLEAN"	"accent_lights"
+//			}
+//		}
+//	}
+"Item"
+	{
+	"ID" "QOL_FOLIAGE_FLOOR"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"	"foliage_floor"
+			}
+		}
+	}
+"Item"
+	{
+	"ID" "QOL_FOLIAGE_WALL"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"	"foliage_wall"
+			}
+		}
+	}
+"Item"
+	{
+	"ID" "QOL_FOLIAGE_CEIL"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"	"foliage_ceil"
+			}
+		}
+	}
+
+// MINI BTS STUFF
+
+"Item"
+	{
+	"ID" "QOL_BTS_3X2"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"	"clean_bts_mini_3x2"
+			}
+		}
+	}
+
+"Item"
+	{
+	"ID" "QOL_BTS_2X2"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"	"clean_bts_mini_2x2"
+			}
+		}
+	}
+
+"Item"
+	{
+	"ID" "QOL_BTS_6X5"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"	"clean_bts_mini_6x5"
+			}
+		}
+	}
+
+"Item"
+	{
+	"ID" "QOL_BROKEN_CEILING_2X2"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"	"broken_ceiling_2x2"
+			}
+		}
+	}
+"Item"
+	{
+	"ID" "QOL_BROKEN_FLOOR_2X2"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"	"broken_floor_2x2"
+			}
+		}
+	}
+"Item"
+	{
+	"ID" "QOL_BROKEN_WALL_2X2"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"	"broken_wall_2x2"
+			}
+		}
+	}
+"Item"
+	{
+	"ID" "QOL_BROKEN_CEILING_1X1"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"	"broken_ceiling_1x1"
+			}
+		}
+	}
+"Item"
+	{
+	"ID" "QOL_DEBRIS"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"	"debris"
+			}
+		}
+	}
+"Item"
+	{
+	"ID" "QOL_BTS_OPENING"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"	"bts_opening"
+			}
+		}
+	}
+"Item"
+	{
+	"ID" "QOL_GRATING_FLOOR"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"
+				{
+				"Folder" "grating_floor"
+				"Append"
+					{
+					"Replacements"
+						{
+						"%skin%"    "0"
+						}
+					}
+				}
+			"BEE2_OVERGROWN"
+			{
+					"Folder" "grating_floor"
+					"Append"
+						{
+						"Replacements"
+							{
+							"%skin%"    "1"
+							}
+						}
+					}
+			}
+		}
+	}
+"PackList"
+	{
+	"ID" "QOL_MULTI_SCAFFOLD"
+	"Config"
+		{
+		"" "models/props_bts/scaffolding_system_bars_128.mdl"
+		"" "models/props_bts/scaffolding_system_bars_256.mdl"
+		"" "models/props_bts/scaffolding_system_bars_384.mdl"
+		}
+	}
+"BrushTemplate"
+	{
+	"ID"   "QOL_BROKEN_CEIL_1X1_TEMP_0"
+	"File" "broken_ceiling/broken_ceil_1x1_0_temp.vmf"
+	}
+"BrushTemplate"
+	{
+	"ID"   "QOL_2X2_BROKEN_CEIL"
+	"File" "broken_ceiling/broken_ceil_2x2.vmf"
+	}
+"BrushTemplate"
+	{
+	"ID"   "QOL_7X9_BROKEN_CEIL"
+	"File" "broken_ceiling/broken_ceil_7x9.vmf"
+	}
+
+"Item"
+	{
+	"ID" "QOL_SOUNDSCAPE"
+	"Version"
+		{
+		"Styles"
+			{
+			"BEE2_CLEAN"
+				{
+				"Folder" "soundscape"
+				"Append"
+					{
+						"Replacements"
+						{
+							"%item_style%"    "clean"
+						}
+					}
+				}
+			"BEE2_OVERGROWN"
+				{
+				"Folder" "soundscape"
+				"Append"
+					{
+						"Replacements"
+						{
+							"%item_style%"    "overgrown"
+						}
+					}
+				}
+			"BEE2_1950s"
+				{
+				"Folder" "soundscape"
+				"Append"
+					{
+						"Replacements"
+							{
+							"%item_style%"    "oldap"
+							}
+					}
+				}
+			}
+		}
+	}
+// ITEMS USING ENDEREK SKYBOX
+// 
+// 
+
+"Item"
+	{
+		"ID" "QOL_BROKEN_CEILING_7X9"
+		"Version"
+			{
+			"Styles"
+				{
+				"BEE2_CLEAN"
+				{
+					"Folder" "broken_ceiling_7x9"
+					"Append"
+					{
+						"Replacements"
+						{
+							"%style%" "clean"
+						}
+					}
+
+				}
+				"BEE2_OVERGROWN"
+				{
+					"Folder" "broken_ceiling_7x9"
+					"Append"
+					{
+						"Replacements"
+						{
+							"%style%" "overgrown"
+						}
+					}
+				}
+			}
+		}
+	}
