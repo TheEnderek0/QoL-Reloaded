@@ -1,6 +1,5 @@
 "Item"
 		{
-		"ItemClass"		"ItemButtonFloor"
 		"Type"			"Wall Foliage"
 		"Editor"
 			{
@@ -13,8 +12,8 @@
 					}
 				"Palette"
 					{
-					"Tooltip"		"BUSH"
-					"Image"			"palette/BEE2/moss2_editor.png"
+					"Tooltip"		"Moss"
+					"Image"			"palette/BEE2/moss.vtf"
 					}
 				"Sounds"
 					{
@@ -28,11 +27,6 @@
 			}
 		"Properties"
 			{
-			"CubeType"
-				{
-					"DefaultValue" "0"
-					"Index" "1"
-				}
 			}
 		"Exporting"
 			{
@@ -41,27 +35,6 @@
 				"0"
 					{
 					"Name"				"instances/BEE2/clean/items/qol_foliage/foliage_wall/moss_0.vmf"
-					"EntityCount"		"1"
-					"BrushCount"		"0"
-					"BrushSideCount"	"0"
-					}
-				"1"
-					{
-					"Name"				"instances/BEE2/clean/items/qol_foliage/foliage_wall/moss_1.vmf"
-					"EntityCount"		"1"
-					"BrushCount"		"0"
-					"BrushSideCount"	"0"
-					}
-				"2"
-					{
-					"Name"				"instances/BEE2/clean/items/qol_foliage/foliage_wall/moss_2.vmf"
-					"EntityCount"		"1"
-					"BrushCount"		"0"
-					"BrushSideCount"	"0"
-					}
-				"3"
-					{
-					"Name"				"instances/BEE2/clean/items/qol_foliage/foliage_wall/moss_3.vmf"
 					"EntityCount"		"1"
 					"BrushCount"		"0"
 					"BrushSideCount"	"0"

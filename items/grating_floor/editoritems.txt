@@ -1,6 +1,5 @@
 "Item"
 		{
-		"ItemClass"		"ItemButtonFloor"
 		"Type"			"Grating Floor"
 		"Editor"
 			{
@@ -71,6 +70,24 @@
 					"Tooltip"		"512"
 					"Image"			"palette/BEE2/grating_floor.png"
 					}
+				"Sounds"
+					{
+					"SOUND_CREATED"					"P2Editor.PlaceOther"
+					"SOUND_DELETED"					"P2Editor.RemoveOther"
+					}
+				}
+			"SubType" //Unused, is here so editor doesn't crash when selected.
+				{
+				"Name"		"Suspended Grating Floor (512)"
+				"Model"
+					{
+					"ModelName"		"art_therapy/grating_floor_512.3ds"
+					}
+				//"Palette"
+				//	{
+				//	"Tooltip"		"512"
+				//	"Image"			"palette/BEE2/grating_floor.png"
+				//	}
 				"Sounds"
 					{
 					"SOUND_CREATED"					"P2Editor.PlaceOther"

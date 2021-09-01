@@ -13,8 +13,8 @@
 			}
 			"Palette"
 			{
-				"Tooltip"	"DESTROYED CEILING"
-				"Image"		"palette/BEE2/broken_ceil_64.png"
+				"Tooltip"	"DESTROYED CEILING 1X1"
+				"Image"		"palette/BEE2/overgrown_ceiling_1x1.vtf"
 			}
 			"Sounds"
 			{

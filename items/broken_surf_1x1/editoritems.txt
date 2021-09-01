@@ -14,7 +14,7 @@
 			"Palette"
 			{
 				"Tooltip"	"DESTROYED WALL 1X1"
-				"Image"		"palette/BEE2/broken_wall_1x1_64.png"
+				"Image"		"palette/BEE2/broken_wall.vtf"
 			}
 			"Sounds"
 			{
@@ -24,17 +24,12 @@
 				"SOUND_DELETED"					"P2Editor.RemoveOther"
 			}
 		}
-		"MovementHandle"	"NONE"
+		"MovementHandle"	"HANDLE_NONE"
 		"InvalidSurface"    "FLOOR"
 		
 	}
 	"Properties"
 	{
-		"ButtonType"
-		{
-			"DefaultValue" "0"
-			"Index" "1"
-		}
 	}
 	"Exporting"
 	{

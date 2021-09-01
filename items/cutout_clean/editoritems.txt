@@ -14,8 +14,8 @@
 				}
 			"Palette"
 				{
-				"Tooltip"		"CUTOUT"
-				"Image"		"palette/BEE2/cutout_floor_2_64.png"
+				"Tooltip"		"CUTOUT (Barely Damaged)"
+				"Image"		"palette/BEE2/cutout_floor_2_clean.vtf"
 				}
 			"Sounds"
 				{
@@ -32,8 +32,8 @@
 				}
 			"Palette"
 				{
-				"Tooltip"		"CUTOUT"
-				"Image"		"palette/BEE2/cutout_floor_1_64.png"
+				"Tooltip"		"CUTOUT (Somewhat Damaged)"
+				"Image"		"palette/BEE2/cutout_floor_1_clean.vtf"
 				}
 			"Sounds"
 				{
@@ -52,8 +52,8 @@
 				}
 			"Palette"
 				{
-				"Tooltip"		"CUTOUT"
-				"Image"		"palette/BEE2/cutout_floor_0_64.png"
+				"Tooltip"		"CUTOUT (Very Damaged)"
+				"Image"		"palette/BEE2/cutout_floor_0_clean.vtf"
 				}
 			"Sounds"
 				{
@@ -62,7 +62,7 @@
 				}
 			}
 		"MovementHandle"	"HANDLE_4_DIRECTIONS"
-		"InvalidSurface"    "CEILING WALL"
+		"InvalidSurface"    ""
 		}
 	"Properties"
 		{

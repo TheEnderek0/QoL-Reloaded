@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8973"
-	"mapversion" "39"
+	"mapversion" "40"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "39"
+	"mapversion" "40"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -775,76 +775,6 @@ entity
 }
 entity
 {
-	"id" "151"
-	"classname" "prop_static"
-	"angles" "0 90 180"
-	"disableselfshadowing" "0"
-	"disableshadows" "1"
-	"disablevertexlighting" "0"
-	"disablex360" "0"
-	"drawinfastreflection" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxcpulevel" "0"
-	"maxdxlevel" "0"
-	"maxgpulevel" "0"
-	"mincpulevel" "0"
-	"mindxlevel" "0"
-	"mingpulevel" "0"
-	"model" "models/anim_wp/framework/squarebeam128x64x64edge_inverse.mdl"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"skin" "0"
-	"solid" "6"
-	"origin" "-1.99998 190 -64"
-	editor
-	{
-		"color" "144 237 0"
-		"groupid" "1464"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3500]"
-	}
-}
-entity
-{
-	"id" "294"
-	"classname" "prop_static"
-	"angles" "-90 270 0"
-	"disableselfshadowing" "0"
-	"disableshadows" "1"
-	"disablevertexlighting" "0"
-	"disablex360" "0"
-	"drawinfastreflection" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxcpulevel" "0"
-	"maxdxlevel" "0"
-	"maxgpulevel" "0"
-	"mincpulevel" "0"
-	"mindxlevel" "0"
-	"mingpulevel" "0"
-	"model" "models/anim_wp/framework/squarebeam128x64x64edge_inverse.mdl"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"skin" "0"
-	"solid" "6"
-	"origin" "-2.00002 -64 -66"
-	editor
-	{
-		"color" "144 237 0"
-		"groupid" "1464"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3500]"
-	}
-}
-entity
-{
 	"id" "323"
 	"classname" "prop_static"
 	"angles" "0 270 0"
@@ -915,41 +845,6 @@ entity
 }
 entity
 {
-	"id" "386"
-	"classname" "prop_static"
-	"angles" "0 90 180"
-	"disableselfshadowing" "0"
-	"disableshadows" "1"
-	"disablevertexlighting" "0"
-	"disablex360" "0"
-	"drawinfastreflection" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxcpulevel" "0"
-	"maxdxlevel" "0"
-	"maxgpulevel" "0"
-	"mincpulevel" "0"
-	"mindxlevel" "0"
-	"mingpulevel" "0"
-	"model" "models/anim_wp/framework/squarebeam64x64x64edge_inverse.mdl"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"skin" "0"
-	"solid" "6"
-	"origin" "96 192 -64"
-	editor
-	{
-		"color" "144 237 0"
-		"groupid" "1464"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 3500]"
-	}
-}
-entity
-{
 	"id" "745"
 	"classname" "prop_static"
 	"angles" "0 90 90"
@@ -996,6 +891,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
+	"lightingorigin" "light_targ_1"
 	"maxcpulevel" "0"
 	"maxdxlevel" "0"
 	"maxgpulevel" "0"
@@ -1030,6 +926,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
+	"lightingorigin" "light_targ_1"
 	"maxcpulevel" "0"
 	"maxdxlevel" "0"
 	"maxgpulevel" "0"
@@ -1064,6 +961,7 @@ entity
 	"fademindist" "-1"
 	"fadescale" "1"
 	"ignorenormals" "0"
+	"lightingorigin" "light_targ_1"
 	"maxcpulevel" "0"
 	"maxdxlevel" "0"
 	"maxgpulevel" "0"
@@ -1105,12 +1003,12 @@ entity
 	"mincpulevel" "0"
 	"mindxlevel" "0"
 	"mingpulevel" "0"
-	"model" "models/props_bts/conduit/electrical_wire_sbend_64_vert_01a.mdl"
+	"model" "models/props_bts/conduit001a.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"skin" "0"
 	"solid" "6"
-	"origin" "-60 0 -188"
+	"origin" "-26 2 -188"
 	editor
 	{
 		"color" "255 255 0"
@@ -1140,7 +1038,7 @@ entity
 	"mincpulevel" "0"
 	"mindxlevel" "0"
 	"mingpulevel" "0"
-	"model" "models/props_bts/conduit/electrical_wire_straight_64_01a.mdl"
+	"model" "models/props_bts/conduit001a.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"skin" "0"
@@ -1158,7 +1056,7 @@ entity
 {
 	"id" "966"
 	"classname" "prop_static"
-	"angles" "-90 180 0"
+	"angles" "-90 90 0"
 	"disableselfshadowing" "0"
 	"disableshadows" "0"
 	"disablevertexlighting" "0"
@@ -1175,12 +1073,12 @@ entity
 	"mincpulevel" "0"
 	"mindxlevel" "0"
 	"mingpulevel" "0"
-	"model" "models/props_bts/conduit/electrical_wire_straight_64_01a.mdl"
+	"model" "models/props_bts/electrical_wire_straight_256_01a.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"skin" "0"
 	"solid" "6"
-	"origin" "100 0 -172"
+	"origin" "100 68 -186"
 	editor
 	{
 		"color" "255 255 0"

@@ -1,10 +1,9 @@
 "Item"
 {
 	"Type"		"BTS Opening"
-	"ItemClass"	"ItemButtonFloor"
 	"Editor"
 	{
-		"SubTypeProperty"		"ButtonType"
+		"SubTypeProperty"		"StartDeployed"
 		"SubType"
 		{
 			"Name"		"BTS Wall Opening 2x2 A"
@@ -15,7 +14,7 @@
 			"Palette"
 			{
 				"Tooltip"	"BTS WALL 2X2 A"
-				"Image"		"palette/BEE2/qol_icon_temp.png"
+				"Image"		"palette/BEE2/bts_opening_2x2A.vtf"
 			}
 			"Sounds"
 			{
@@ -35,7 +34,7 @@
 			"Palette"
 			{
 				"Tooltip"	"BTS WALL 2X2 B"
-				"Image"		"palette/BEE2/qol_icon_temp.png"
+				"Image"		"palette/BEE2/bts_opening_2x2B.vtf"
 			}
 			"Sounds"
 			{
@@ -53,7 +52,7 @@
 	}
 	"Properties"
 	{
-		"ButtonType"
+		"StartDeployed"
 		{
 			"DefaultValue"	"0"
 			"Index"		"1"
@@ -66,27 +65,6 @@
 			"0"
 			{
 				"Name"				"instances/BEE2/clean/items/mini_bts/bts_hole_256x128.vmf"
-				"EntityCount"		"13"
-				"BrushCount"		"7"
-				"BrushSideCount"	"56"
-			}
-			"1"
-			{
-				"Name"				"instances/BEE2/clean/items/mini_bts/bts_hole_256x128.vmf"
-				"EntityCount"		"13"
-				"BrushCount"		"7"
-				"BrushSideCount"	"56"
-			}
-			"2"
-			{
-				"Name"				"instances/BEE2/clean/items/mini_bts/bts_hole_256x128_b.vmf"
-				"EntityCount"		"13"
-				"BrushCount"		"7"
-				"BrushSideCount"	"56"
-			}
-			"3"
-			{
-				"Name"				"instances/BEE2/clean/items/mini_bts/bts_hole_256x128_b.vmf"
 				"EntityCount"		"13"
 				"BrushCount"		"7"
 				"BrushSideCount"	"56"

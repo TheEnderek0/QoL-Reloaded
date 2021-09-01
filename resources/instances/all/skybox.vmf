@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8973"
-	"mapversion" "87"
+	"mapversion" "90"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -26,7 +26,7 @@ viewsettings
 world
 {
 	"id" "59054"
-	"mapversion" "87"
+	"mapversion" "90"
 	"classname" "worldspawn"
 	"BEE2_is_peti" "1"
 	"BEE2_is_preview" "0"
@@ -76,7 +76,7 @@ world
 		{
 			"id" "7552"
 			"plane" "(-6992 9136 -11520) (-6992 -5120 -11520) (-6992 -5120 11447)"
-			"material" "TOOLS/TOOLSSKYBOX"
+			"material" "TOOLS/TOOLSBLACK"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -174,7 +174,7 @@ world
 		{
 			"id" "7560"
 			"plane" "(9216 9120 -11520) (-6992 9120 -11520) (-6992 9120 11447)"
-			"material" "TOOLS/TOOLSSKYBOX"
+			"material" "TOOLS/TOOLSBLACK"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -217,7 +217,7 @@ world
 		{
 			"id" "7563"
 			"plane" "(9200 9120 11447) (9200 -5120 11447) (9200 -5120 -11520)"
-			"material" "TOOLS/TOOLSSKYBOX"
+			"material" "TOOLS/TOOLSBLACK"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -315,7 +315,7 @@ world
 		{
 			"id" "7571"
 			"plane" "(9200 -5104 11447) (-6992 -5104 11447) (-6992 -5104 -11520)"
-			"material" "TOOLS/TOOLSSKYBOX"
+			"material" "TOOLS/TOOLSBLACK"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
 			"rotation" "0"
@@ -358,7 +358,7 @@ world
 		{
 			"id" "7592"
 			"plane" "(-6992 9120 11440) (-6992 -5104 11440) (9200 -5104 11440)"
-			"material" "TOOLS/TOOLSSKYBOX"
+			"material" "TOOLS/TOOLSBLACK"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
@@ -423,7 +423,7 @@ world
 		{
 			"id" "7608"
 			"plane" "(-6992 -5104 -11513) (-6992 9120 -11513) (9200 9120 -11513)"
-			"material" "TOOLS/TOOLSSKYBOX"
+			"material" "TOOLS/TOOLSBLACK"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"

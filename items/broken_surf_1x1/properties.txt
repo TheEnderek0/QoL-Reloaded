@@ -5,12 +5,8 @@
 	"Description"	
 		{
 		"" "A broken 1x1 surface that can be placed on ceilings and walls."
-		"" "**WARNING: THIS ITEM IS KNOWN TO BE BROKEN.**"
+		"" "* Instances will be randomly choosen."
 		}
 	"infoURL"		""
 	"Ent_count"     "10"
-	"Icon"
-		{
-			"0"	"clean/broken_wall_64.png"
-		}
 	}

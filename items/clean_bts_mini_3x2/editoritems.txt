@@ -14,7 +14,7 @@
 			"Palette"
 			{
 				"Tooltip"	"BTS 2X3"
-				"Image"		"palette/BEE2/qol_icon_temp.png"
+				"Image"		"palette/BEE2/bts_opening_2x3.vtf"
 			}
 			"Sounds"
 			{
