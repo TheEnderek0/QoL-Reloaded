@@ -8,11 +8,6 @@
 		}
 	"Ent_count"     "Moving: 0\nStatic: 2"
 	"infoURL"		"No"
-	"Icon_all"	"clean/cutout_floor_0_64.png"
-	"Icon"
-		{
-			"0"	"clean/cutout_floor_2_64.png"
-			"1"	"clean/cutout_floor_1_64.png"
-			"2"	"clean/cutout_floor_0_64.png"
-		}
+	"all_icon"		"palette/bee2/cutout_combined.vtf"
+	"all_name"		"Cutout"
 	}

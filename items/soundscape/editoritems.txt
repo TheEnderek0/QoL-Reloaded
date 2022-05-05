@@ -14,7 +14,7 @@
 				"Palette"
 					{
 					"Tooltip"		"SOUNDSCAPE"
-					"Image"			"palette/BEE2/soundscape.png"
+					"Image"			"palette/BEE2/soundscape_large.vtf"
 					}
 				"Sounds"
 					{

@@ -1,15 +1,13 @@
 "Properties"
 	{
 	"Tags"			"Portal 2;Decoration"
-	"Authors"		"Baguettery"
+	"Authors"		"Baguettery, The_Enderek0"
 	"Description"	
 		{
 		"" "A 2x2 indented broken floor. Variant 1 has water. Variant 2 does not."
+		"" "* Start deployed 0 - High Water"
+		"" "* Start deployed 1 - Low Water"
 		}
 	"infoURL"		""
 	"Ent_count"     "10"
-	"Icon"
-		{
-			"0"	"clean/broken_ceil_64.png"
-		}
 	}

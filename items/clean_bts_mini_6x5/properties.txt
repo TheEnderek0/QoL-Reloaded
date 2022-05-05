@@ -1,15 +1,11 @@
 "Properties"
 	{
 	"Tags"			"Portal 2;Decoration"
-	"Authors"		"Baguettery"
+	"Authors"		"Baguettery, The_Enderek0"
 	"Description"	
 		{
-		"" "A 3x2 section of ceiling that has a small area of bts exposed."
+		"" "A 6x5 section of ceiling that has a small area of bts exposed."
 		}
 	"infoURL"		""
 	"Ent_count"     "10"
-	"Icon"
-		{
-			"0"	"clean/qol_icon_temp.png"
-		}
 	}

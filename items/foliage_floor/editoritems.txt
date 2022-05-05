@@ -15,7 +15,7 @@
 				"Palette"
 					{
 					"Tooltip"		"BUSH"
-					"Image"			"palette/BEE2/foliage/bush.png"
+					"Image"			"palette/BEE2/bush.vtf"
 					}
 				"Sounds"
 					{
@@ -33,7 +33,7 @@
 				"Palette"
 					{
 					"Tooltip"		"FERN"
-					"Image"			"palette/BEE2/foliage/fern.png"
+					"Image"			"palette/BEE2/fern.vtf"
 					}
 				"Sounds"
 					{
@@ -51,7 +51,7 @@
 				"Palette"
 					{
 					"Tooltip"		"TREE"
-					"Image"			"palette/BEE2/foliage/tree.png"
+					"Image"			"palette/BEE2/tree.vtf"
 					}
 				"Sounds"
 					{

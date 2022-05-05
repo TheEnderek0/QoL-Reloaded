@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "8419"
-	"mapversion" "36"
+	"editorbuild" "8973"
+	"mapversion" "40"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -14,13 +14,13 @@ viewsettings
 	"bSnapToGrid" "1"
 	"bShowGrid" "1"
 	"bShowLogicalGrid" "0"
-	"nGridSpacing" "32"
+	"nGridSpacing" "1"
 	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "1"
-	"mapversion" "36"
+	"mapversion" "40"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
@@ -140,7 +140,7 @@ entity
 	"rendercolor" "255 255 255"
 	"skin" "0"
 	"solid" "6"
-	"origin" "0 2.91591 -92"
+	"origin" "0 -2 -92"
 	editor
 	{
 		"color" "255 255 0"
@@ -169,46 +169,12 @@ entity
 	"mincpulevel" "0"
 	"mindxlevel" "0"
 	"mingpulevel" "0"
-	"model" "models/anim_wp/framework/squarebeam_off_2x2_deformed.mdl"
+	"model" "models/anim_wp/framework/squarebeam_off_2x2.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
 	"skin" "1"
 	"solid" "6"
 	"origin" "0 0 -64"
-	editor
-	{
-		"color" "255 255 0"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 500]"
-	}
-}
-entity
-{
-	"id" "1214"
-	"classname" "prop_static"
-	"angles" "-90 270 0"
-	"disableselfshadowing" "0"
-	"disableshadows" "0"
-	"disablevertexlighting" "0"
-	"disablex360" "0"
-	"drawinfastreflection" "0"
-	"fademaxdist" "0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"ignorenormals" "0"
-	"maxcpulevel" "0"
-	"maxdxlevel" "0"
-	"maxgpulevel" "0"
-	"mincpulevel" "0"
-	"mindxlevel" "0"
-	"mingpulevel" "0"
-	"model" "models/props_foliage/vines_128_128_halfdry01.mdl"
-	"renderamt" "255"
-	"rendercolor" "255 255 255"
-	"skin" "0"
-	"solid" "6"
-	"origin" "-4 68 -92"
 	editor
 	{
 		"color" "255 255 0"

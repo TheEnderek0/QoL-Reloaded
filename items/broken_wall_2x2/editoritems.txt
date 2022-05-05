@@ -1,7 +1,6 @@
 "Item"
 {
 	"Type"		"Broken Wall"
-	"ItemClass"	"ItemButtonFloor"
 	"Editor"
 	{
 		"SubType"
@@ -13,8 +12,8 @@
 			}
 			"Palette"
 			{
-				"Tooltip"	"DESTROYED WALL"
-				"Image"		"palette/BEE2/broken_ceil_64.png"
+				"Tooltip"	"DESTROYED WALL 2X2"
+				"Image"		"palette/BEE2/overgrown_wall_2x2.vtf"
 			}
 			"Sounds"
 			{

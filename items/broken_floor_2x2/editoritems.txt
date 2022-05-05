@@ -1,10 +1,9 @@
 "Item"
 {
 	"Type"		"Broken Floor 2x2"
-	"ItemClass"	"ItemButtonFloor"
 	"Editor"
 	{
-		"SubTypeProperty" "ButtonType"
+		"SubTypeProperty" "StartDeployed"
 		"SubType"
 		{
 			"Name"		"Destroyed Floor 2x2 (High water)"
@@ -15,7 +14,7 @@
 			"Palette"
 			{
 				"Tooltip"	"DESTROYED FLOOR 2X2 HIGH"
-				"Image"		"palette/BEE2/broken_ceil_64.png"
+				"Image"		"palette/BEE2/floor2x2.vtf"
 			}
 			"Sounds"
 			{
@@ -35,7 +34,7 @@
 			"Palette"
 			{
 				"Tooltip"	"DESTROYED FLOOR 2X2 LOW"
-				"Image"		"palette/BEE2/broken_ceil_64.png"
+				"Image"		"palette/BEE2/floor2x2.vtf"
 			}
 			"Sounds"
 			{
@@ -52,10 +51,10 @@
 	}
 	"Properties"
 	{
-		"ButtonType"
+		"StartDeployed"
 			{
 			"DefaultValue"  "0"
-			"Index"         "0"
+			"Index"         "1"
 			}
 	}
 	"Exporting"

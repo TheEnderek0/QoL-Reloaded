@@ -15,7 +15,27 @@
 			}
 		}
 	}
-
+"ConfigGroup"
+	{
+	"ID"    "ENDEREK_SKYBOX"
+	"Name"  "QOL - Skybox"
+	"Widget"
+		{
+		"ID"	  "ENABLE_SKYBOX"
+		"Label"   "Enable Skybox in QOL items"
+		"Tooltip" "Enable skybox in QOL items, this settings will disable skybox and reduce compile times."
+		"Type"    "Checkbox"
+		"Default" "1"
+		}
+	"Widget"
+		{
+		"ID"	  "CUTOUT_SKYBOX"
+		"Label"   "Cutout Tiles - Skybox"
+		"Tooltip" "Cutout Tiles will use 3D skybox (only in clean style!)."
+		"Type"    "Checkbox"
+		"Default" "0"
+		}
+	}
 "BrushTemplate"
 	{
 	"ID"   "QOL_CUTOUT_0_CLEAN"
@@ -73,29 +93,17 @@
 	"ID"   "QOL_OPEN_CEILING"
 	"File" "bts_ceiling.vmf"
 	}
-//"Item"
-//	{
-//	"ID" "QOL_BROKEN_SURF_1X1"
-//	"Version"
-//		{
-//		"Styles"
-//			{
-//			"BEE2_CLEAN"	"broken_surf_1x1"
-//			"BEE2_OVERGROWN"
-//				{
-//					"Folder" "broken_surf_1x1"
-//					"Instances"
-//					{
-//					"0" "instances/BEE2/over/items/Broken Wall/wall/1x1_0.vmf"
-//					"1"  "instances/BEE2/over/items/Broken Wall/wall/1x1_1.vmf"
-//					"2" "instances/BEE2/over/items/Broken Wall/wall/1x1_2.vmf"
-//					"3" "instances/BEE2/over/items/Broken Wall/ceil/1x1_0.vmf"
-//					"4" "instances/BEE2/over/items/Broken Wall/ceil/1x1_1.vmf"
-//					}
-//				}
-//			}
-//		}
-//	}
+"Item"
+	{
+	"ID" "QOL_BROKEN_SURF_1X1"
+	"Version"
+		{
+		"Styles"
+			{
+			"ANY_STYLE"	"broken_surf_1x1"
+			}
+		}
+	}
 //"Item"
 //	{
 //	"ID" "QOL_ACCENT_LIGHTS"
@@ -236,17 +244,6 @@
 	}
 "Item"
 	{
-	"ID" "QOL_BTS_OPENING"
-	"Version"
-		{
-		"Styles"
-			{
-			"BEE2_CLEAN"	"bts_opening"
-			}
-		}
-	}
-"Item"
-	{
 	"ID" "QOL_GRATING_FLOOR"
 	"Version"
 		{
@@ -346,10 +343,7 @@
 			}
 		}
 	}
-// ITEMS USING ENDEREK SKYBOX
-// 
-// 
-
+ 
 "Item"
 	{
 		"ID" "QOL_BROKEN_CEILING_7X9"
@@ -381,5 +375,23 @@
 					}
 				}
 			}
+		}
+	}
+// ITEMS USING ENDEREK SKYBOX
+// 
+// 
+"Item"
+	{
+	"ID" "QOL_BTS_OPENING"
+	"Version"
+		{
+		"Styles"
+			{
+			"ANY_STYLE"
+			{
+			"Config" "skybox.cfg"
+			"Folder" "bts_opening"
+			}
+ 			}
 		}
 	}
