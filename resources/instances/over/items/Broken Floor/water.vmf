@@ -1,8 +1,8 @@
 versioninfo
 {
 	"editorversion" "400"
-	"editorbuild" "8973"
-	"mapversion" "49"
+	"editorbuild" "9679"
+	"mapversion" "50"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -22,17 +22,46 @@ viewsettings
 	"bShowLogicalGrid" "0"
 	"nGridSpacing" "4"
 	"bShow3DGrid" "0"
+	"nInstanceVisibility" "2"
+	views
+	{
+		v0
+		{
+			"3d" "0"
+			"position" "(-62.3621 -160.469 65536)"
+			"zoom" "2.22903"
+		}
+		v1
+		{
+			"3d" "0"
+			"position" "(0 0 0)"
+			"zoom" "0.25"
+		}
+		v2
+		{
+			"3d" "0"
+			"position" "(190.034 -65536 -67.1409)"
+			"zoom" "34.3426"
+		}
+		v3
+		{
+			"3d" "1"
+			"position" "(89.0889 -22.5218 -48.5688)"
+			"angle" "[4.40003 227.6 0]"
+		}
+	}
 }
 world
 {
 	"id" "1"
-	"mapversion" "49"
+	"mapversion" "50"
 	"classname" "worldspawn"
 	"detailmaterial" "detail/detailsprites"
 	"detailvbsp" "detail.vbsp"
 	"maxblobcount" "250"
 	"maxpropscreenwidth" "-1"
 	"skyname" "sky_black_nofog"
+	"maxprojectedtextures" "8"
 	solid
 	{
 		"id" "2279"
@@ -40,9 +69,17 @@ world
 		{
 			"id" "3007"
 			"plane" "(-60 -188 -67) (-60 60 -67) (188 60 -67)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 -188 -67"
+				"point" "1 -60 60 -67"
+				"point" "2 188 60 -67"
+				"point" "3 188 -188 -67"
+			}
 			"material" "NATURE/WATER_A2_LASER_INTRO"
-			"uaxis" "[1 0 0 -256] 0.25"
-			"vaxis" "[0 -1 0 -256] 0.25"
+			"uaxis" "[1 0 0 0] 0.25"
+			"vaxis" "[0 -1 0 0] 0.25"
 			"rotation" "0"
 			"lightmapscale" "16"
 			"smoothing_groups" "0"
@@ -51,6 +88,14 @@ world
 		{
 			"id" "3008"
 			"plane" "(-60 60 -108) (-60 -188 -108) (188 -188 -108)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 60 -108"
+				"point" "1 -60 -188 -108"
+				"point" "2 188 -188 -108"
+				"point" "3 188 60 -108"
+			}
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -62,6 +107,14 @@ world
 		{
 			"id" "3009"
 			"plane" "(-60 -188 -108) (-60 60 -108) (-60 60 -67)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 -188 -108"
+				"point" "1 -60 60 -108"
+				"point" "2 -60 60 -67"
+				"point" "3 -60 -188 -67"
+			}
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 -52] 0.25"
@@ -73,6 +126,14 @@ world
 		{
 			"id" "3010"
 			"plane" "(188 60 -108) (188 -188 -108) (188 -188 -67)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 188 60 -108"
+				"point" "1 188 -188 -108"
+				"point" "2 188 -188 -67"
+				"point" "3 188 60 -67"
+			}
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 -52] 0.25"
@@ -84,6 +145,14 @@ world
 		{
 			"id" "3011"
 			"plane" "(-60 60 -108) (188 60 -108) (188 60 -67)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 60 -108"
+				"point" "1 188 60 -108"
+				"point" "2 188 60 -67"
+				"point" "3 -60 60 -67"
+			}
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 -52] 0.25"
@@ -95,6 +164,14 @@ world
 		{
 			"id" "3012"
 			"plane" "(188 -188 -108) (-60 -188 -108) (-60 -188 -67)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 188 -188 -108"
+				"point" "1 -60 -188 -108"
+				"point" "2 -60 -188 -67"
+				"point" "3 188 -188 -67"
+			}
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 -52] 0.25"
@@ -116,6 +193,14 @@ world
 		{
 			"id" "3013"
 			"plane" "(-96 -224 -32) (-96 96 -32) (224 96 -32)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -96 -224 -32"
+				"point" "1 -96 96 -32"
+				"point" "2 224 96 -32"
+				"point" "3 224 -224 -32"
+			}
 			"material" "TOOLS/TOOLSSKIP"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -127,6 +212,14 @@ world
 		{
 			"id" "3014"
 			"plane" "(-96 96 -352) (-96 -224 -352) (224 -224 -352)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -96 96 -352"
+				"point" "1 -96 -224 -352"
+				"point" "2 224 -224 -352"
+				"point" "3 224 96 -352"
+			}
 			"material" "TOOLS/TOOLSSKIP"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -138,6 +231,14 @@ world
 		{
 			"id" "3015"
 			"plane" "(-96 -224 -352) (-96 96 -352) (-96 96 -32)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -96 -224 -352"
+				"point" "1 -96 96 -352"
+				"point" "2 -96 96 -32"
+				"point" "3 -96 -224 -32"
+			}
 			"material" "TOOLS/TOOLSSKIP"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -149,6 +250,14 @@ world
 		{
 			"id" "3016"
 			"plane" "(224 96 -352) (224 -224 -352) (224 -224 -32)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 224 96 -352"
+				"point" "1 224 -224 -352"
+				"point" "2 224 -224 -32"
+				"point" "3 224 96 -32"
+			}
 			"material" "TOOLS/TOOLSSKIP"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -160,6 +269,14 @@ world
 		{
 			"id" "3017"
 			"plane" "(-96 96 -352) (224 96 -352) (224 96 -32)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -96 96 -352"
+				"point" "1 224 96 -352"
+				"point" "2 224 96 -32"
+				"point" "3 -96 96 -32"
+			}
 			"material" "TOOLS/TOOLSSKIP"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -171,6 +288,14 @@ world
 		{
 			"id" "3018"
 			"plane" "(224 -224 -352) (-96 -224 -352) (-96 -224 -32)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 224 -224 -352"
+				"point" "1 -96 -224 -352"
+				"point" "2 -96 -224 -32"
+				"point" "3 224 -224 -32"
+			}
 			"material" "TOOLS/TOOLSSKIP"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -191,7 +316,15 @@ world
 		side
 		{
 			"id" "18"
-			"plane" "(-60 60 -112) (-60 -188 -112) (188 -188 -112)"
+			"plane" "(-60 -188 -112) (188 -188 -112) (188 60 -112)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 -188 -112"
+				"point" "1 188 -188 -112"
+				"point" "2 188 60 -112"
+				"point" "3 -60 60 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 -1 0 -256] 0.25"
@@ -202,7 +335,15 @@ world
 		side
 		{
 			"id" "17"
-			"plane" "(-60 -188 -108) (-60 -188 -112) (-60 60 -112)"
+			"plane" "(-60 -188 -112) (-60 60 -112) (-60 60 -108)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 -188 -112"
+				"point" "1 -60 60 -112"
+				"point" "2 -60 60 -108"
+				"point" "3 -60 -188 -108"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[0 1 0 256] 0.25"
 			"vaxis" "[0 0 -1 64] 0.25"
@@ -213,7 +354,15 @@ world
 		side
 		{
 			"id" "16"
-			"plane" "(188 60 -108) (188 60 -112) (188 -188 -112)"
+			"plane" "(188 60 -112) (188 -188 -112) (188 -188 -108)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 188 60 -112"
+				"point" "1 188 -188 -112"
+				"point" "2 188 -188 -108"
+				"point" "3 188 60 -108"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[0 1 0 256] 0.25"
 			"vaxis" "[0 0 -1 64] 0.25"
@@ -224,7 +373,15 @@ world
 		side
 		{
 			"id" "15"
-			"plane" "(-60 60 -108) (-60 60 -112) (188 60 -112)"
+			"plane" "(-60 60 -112) (188 60 -112) (188 60 -108)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 60 -112"
+				"point" "1 188 60 -112"
+				"point" "2 188 60 -108"
+				"point" "3 -60 60 -108"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 0 -1 64] 0.25"
@@ -235,7 +392,15 @@ world
 		side
 		{
 			"id" "14"
-			"plane" "(188 -188 -108) (188 -188 -112) (-60 -188 -112)"
+			"plane" "(188 -188 -112) (-60 -188 -112) (-60 -188 -108)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 188 -188 -112"
+				"point" "1 -60 -188 -112"
+				"point" "2 -60 -188 -108"
+				"point" "3 188 -188 -108"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 0 -1 64] 0.25"
@@ -246,7 +411,15 @@ world
 		side
 		{
 			"id" "13"
-			"plane" "(-60 -188 -108) (-60 60 -108) (188 60 -108)"
+			"plane" "(-60 60 -108) (188 60 -108) (188 -188 -108)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 60 -108"
+				"point" "1 188 60 -108"
+				"point" "2 188 -188 -108"
+				"point" "3 -60 -188 -108"
+			}
 			"material" "TOOLS/TOOLSBLACK"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -268,7 +441,15 @@ world
 		side
 		{
 			"id" "3042"
-			"plane" "(188 -192 -64) (188 -192 -112) (-60 -192 -112)"
+			"plane" "(-60 -192 -112) (-60 -192 -64) (188 -192 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 -192 -112"
+				"point" "1 -60 -192 -64"
+				"point" "2 188 -192 -64"
+				"point" "3 188 -192 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -279,7 +460,15 @@ world
 		side
 		{
 			"id" "3041"
-			"plane" "(-60 -188 -112) (-60 -192 -112) (188 -192 -112)"
+			"plane" "(188 -192 -112) (188 -188 -112) (-60 -188 -112)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 188 -192 -112"
+				"point" "1 188 -188 -112"
+				"point" "2 -60 -188 -112"
+				"point" "3 -60 -192 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 -1 0 -256] 0.25"
@@ -290,7 +479,15 @@ world
 		side
 		{
 			"id" "3040"
-			"plane" "(-60 -192 -64) (-60 -192 -112) (-60 -188 -112)"
+			"plane" "(-60 -188 -112) (-60 -188 -64) (-60 -192 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 -188 -112"
+				"point" "1 -60 -188 -64"
+				"point" "2 -60 -192 -64"
+				"point" "3 -60 -192 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[0 1 0 256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -301,7 +498,15 @@ world
 		side
 		{
 			"id" "3039"
-			"plane" "(188 -188 -64.7617) (188 -188 -112) (188 -192 -112)"
+			"plane" "(188 -192 -112) (188 -192 -64) (188 -188 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 188 -192 -112"
+				"point" "1 188 -192 -64"
+				"point" "2 188 -188 -64"
+				"point" "3 188 -188 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[0 1 0 256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -312,7 +517,15 @@ world
 		side
 		{
 			"id" "3038"
-			"plane" "(-60 -188 -64.7617) (-60 -188 -112) (188 -188 -112)"
+			"plane" "(188 -188 -112) (188 -188 -64) (-60 -188 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 188 -188 -112"
+				"point" "1 188 -188 -64"
+				"point" "2 -60 -188 -64"
+				"point" "3 -60 -188 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -323,7 +536,15 @@ world
 		side
 		{
 			"id" "3037"
-			"plane" "(188 -192 -64) (-60 -192 -64) (-60 -188 -64.761)"
+			"plane" "(-60 -188 -64) (188 -188 -64) (188 -192 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 -188 -64"
+				"point" "1 188 -188 -64"
+				"point" "2 188 -192 -64"
+				"point" "3 -60 -192 -64"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 -1 0 -256] 0.25"
@@ -345,7 +566,15 @@ world
 		side
 		{
 			"id" "90"
-			"plane" "(-64 -192 -64) (-64 -192 -112) (-64 64 -112)"
+			"plane" "(-64 64 -112) (-64 64 -64) (-64 -192 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -64 64 -112"
+				"point" "1 -64 64 -64"
+				"point" "2 -64 -192 -64"
+				"point" "3 -64 -192 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[0 1 0 256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -356,7 +585,15 @@ world
 		side
 		{
 			"id" "89"
-			"plane" "(-64 64 -64) (-64 64 -112) (-60 64 -112)"
+			"plane" "(-60 64 -112) (-60 64 -64) (-64 64 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 64 -112"
+				"point" "1 -60 64 -64"
+				"point" "2 -64 64 -64"
+				"point" "3 -64 64 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -367,7 +604,15 @@ world
 		side
 		{
 			"id" "88"
-			"plane" "(-60 -192 -64.7617) (-60 -192 -112) (-64 -192 -112)"
+			"plane" "(-64 -192 -112) (-64 -192 -64) (-60 -192 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -64 -192 -112"
+				"point" "1 -64 -192 -64"
+				"point" "2 -60 -192 -64"
+				"point" "3 -60 -192 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -378,7 +623,15 @@ world
 		side
 		{
 			"id" "87"
-			"plane" "(-60 64 -112) (-64 64 -112) (-64 -192 -112)"
+			"plane" "(-64 -192 -112) (-60 -192 -112) (-60 64 -112)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -64 -192 -112"
+				"point" "1 -60 -192 -112"
+				"point" "2 -60 64 -112"
+				"point" "3 -64 64 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 -1 0 -256] 0.25"
@@ -389,7 +642,15 @@ world
 		side
 		{
 			"id" "86"
-			"plane" "(-60 64 -64.7617) (-60 64 -112) (-60 -192 -112)"
+			"plane" "(-60 -192 -112) (-60 -192 -64) (-60 64 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 -192 -112"
+				"point" "1 -60 -192 -64"
+				"point" "2 -60 64 -64"
+				"point" "3 -60 64 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[0 1 0 256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -400,7 +661,15 @@ world
 		side
 		{
 			"id" "85"
-			"plane" "(-60 -192 -64.762) (-64 -192 -64) (-64 64 -64)"
+			"plane" "(-64 64 -64) (-60 64 -64) (-60 -192 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -64 64 -64"
+				"point" "1 -60 64 -64"
+				"point" "2 -60 -192 -64"
+				"point" "3 -64 -192 -64"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 -1 0 -256] 0.25"
@@ -422,7 +691,15 @@ world
 		side
 		{
 			"id" "96"
-			"plane" "(192 64 -64) (192 64 -112) (192 -192 -112)"
+			"plane" "(192 -192 -112) (192 -192 -64) (192 64 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 192 -192 -112"
+				"point" "1 192 -192 -64"
+				"point" "2 192 64 -64"
+				"point" "3 192 64 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[0 1 0 256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -433,7 +710,15 @@ world
 		side
 		{
 			"id" "95"
-			"plane" "(188 64 -64.7617) (188 64 -112) (192 64 -112)"
+			"plane" "(192 64 -112) (192 64 -64) (188 64 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 192 64 -112"
+				"point" "1 192 64 -64"
+				"point" "2 188 64 -64"
+				"point" "3 188 64 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -444,7 +729,15 @@ world
 		side
 		{
 			"id" "94"
-			"plane" "(192 -192 -64) (192 -192 -112) (188 -192 -112)"
+			"plane" "(188 -192 -112) (188 -192 -64) (192 -192 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 188 -192 -112"
+				"point" "1 188 -192 -64"
+				"point" "2 192 -192 -64"
+				"point" "3 192 -192 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -455,7 +748,15 @@ world
 		side
 		{
 			"id" "93"
-			"plane" "(188 -192 -112) (192 -192 -112) (192 64 -112)"
+			"plane" "(192 64 -112) (188 64 -112) (188 -192 -112)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 192 64 -112"
+				"point" "1 188 64 -112"
+				"point" "2 188 -192 -112"
+				"point" "3 192 -192 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 -1 0 -256] 0.25"
@@ -466,7 +767,15 @@ world
 		side
 		{
 			"id" "92"
-			"plane" "(188 -192 -64.7617) (188 -192 -112) (188 64 -112)"
+			"plane" "(188 64 -112) (188 64 -64) (188 -192 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 188 64 -112"
+				"point" "1 188 64 -64"
+				"point" "2 188 -192 -64"
+				"point" "3 188 -192 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[0 1 0 256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -477,7 +786,15 @@ world
 		side
 		{
 			"id" "91"
-			"plane" "(188 64 -64.7609) (192 64 -64) (192 -192 -64)"
+			"plane" "(192 -192 -64) (188 -192 -64) (188 64 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 192 -192 -64"
+				"point" "1 188 -192 -64"
+				"point" "2 188 64 -64"
+				"point" "3 192 64 -64"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 -1 0 -256] 0.25"
@@ -499,7 +816,15 @@ world
 		side
 		{
 			"id" "102"
-			"plane" "(-60 64 -64) (-60 64 -112) (188 64 -112)"
+			"plane" "(188 64 -64) (-60 64 -64) (-60 64 -112)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 188 64 -64"
+				"point" "1 -60 64 -64"
+				"point" "2 -60 64 -112"
+				"point" "3 188 64 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -510,7 +835,15 @@ world
 		side
 		{
 			"id" "101"
-			"plane" "(188 64 -112) (-60 64 -112) (-60 60 -112)"
+			"plane" "(188 60 -112) (188 64 -112) (-60 64 -112)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 188 60 -112"
+				"point" "1 188 64 -112"
+				"point" "2 -60 64 -112"
+				"point" "3 -60 60 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 -1 0 -256] 0.25"
@@ -521,7 +854,15 @@ world
 		side
 		{
 			"id" "100"
-			"plane" "(-60 60 -64.7617) (-60 60 -112) (-60 64 -112)"
+			"plane" "(-60 64 -64) (-60 60 -64) (-60 60 -112)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 64 -64"
+				"point" "1 -60 60 -64"
+				"point" "2 -60 60 -112"
+				"point" "3 -60 64 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[0 1 0 256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -532,7 +873,15 @@ world
 		side
 		{
 			"id" "99"
-			"plane" "(188 64 -64) (188 64 -112) (188 60 -112)"
+			"plane" "(188 60 -64) (188 64 -64) (188 64 -112)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 188 60 -64"
+				"point" "1 188 64 -64"
+				"point" "2 188 64 -112"
+				"point" "3 188 60 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[0 1 0 256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -543,7 +892,15 @@ world
 		side
 		{
 			"id" "98"
-			"plane" "(188 60 -64.7617) (188 60 -112) (-60 60 -112)"
+			"plane" "(-60 60 -64) (188 60 -64) (188 60 -112)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -60 60 -64"
+				"point" "1 188 60 -64"
+				"point" "2 188 60 -112"
+				"point" "3 -60 60 -112"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 0 -1 -256] 0.25"
@@ -554,7 +911,15 @@ world
 		side
 		{
 			"id" "97"
-			"plane" "(-60 60 -64.7609) (-60 64 -64) (188 64 -64)"
+			"plane" "(188 60 -64) (-60 60 -64) (-60 64 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 188 60 -64"
+				"point" "1 -60 60 -64"
+				"point" "2 -60 64 -64"
+				"point" "3 188 64 -64"
+			}
 			"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 			"uaxis" "[1 0 0 -256] 0.25"
 			"vaxis" "[0 -1 0 -256] 0.25"
@@ -577,6 +942,14 @@ world
 		{
 			"id" "3001"
 			"plane" "(-56 -184 -81) (-56 56 -81) (184 56 -81)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -56 -184 -81"
+				"point" "1 -56 56 -81"
+				"point" "2 184 56 -81"
+				"point" "3 184 -184 -81"
+			}
 			"material" "METAL/METALGRATE018"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -588,6 +961,14 @@ world
 		{
 			"id" "3002"
 			"plane" "(-56 56 -82) (-56 -184 -82) (184 -184 -82)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -56 56 -82"
+				"point" "1 -56 -184 -82"
+				"point" "2 184 -184 -82"
+				"point" "3 184 56 -82"
+			}
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -599,6 +980,14 @@ world
 		{
 			"id" "3003"
 			"plane" "(-56 -184 -82) (-56 56 -82) (-56 56 -81)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -56 -184 -82"
+				"point" "1 -56 56 -82"
+				"point" "2 -56 56 -81"
+				"point" "3 -56 -184 -81"
+			}
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 28] 0.25"
@@ -610,6 +999,14 @@ world
 		{
 			"id" "3004"
 			"plane" "(184 56 -82) (184 -184 -82) (184 -184 -81)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 184 56 -82"
+				"point" "1 184 -184 -82"
+				"point" "2 184 -184 -81"
+				"point" "3 184 56 -81"
+			}
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 28] 0.25"
@@ -621,6 +1018,14 @@ world
 		{
 			"id" "3005"
 			"plane" "(-56 56 -82) (184 56 -82) (184 56 -81)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -56 56 -82"
+				"point" "1 184 56 -82"
+				"point" "2 184 56 -81"
+				"point" "3 -56 56 -81"
+			}
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 28] 0.25"
@@ -632,6 +1037,14 @@ world
 		{
 			"id" "3006"
 			"plane" "(184 -184 -82) (-56 -184 -82) (-56 -184 -81)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 184 -184 -82"
+				"point" "1 -56 -184 -82"
+				"point" "2 -56 -184 -81"
+				"point" "3 184 -184 -81"
+			}
 			"material" "TOOLS/TOOLSNODRAW"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 28] 0.25"
@@ -696,6 +1109,14 @@ entity
 		{
 			"id" "3186"
 			"plane" "(-32 32 -76.8) (-32 -64 -70.4004) (160 -64 -70.4004)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -32 32 -76.8"
+				"point" "1 -32 -64 -70.4001"
+				"point" "2 160 -64 -70.4001"
+				"point" "3 160 32 -76.8"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -707,6 +1128,14 @@ entity
 		{
 			"id" "3185"
 			"plane" "(160 -64 -70.3999) (-32 -64 -70.3999) (-32 32 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 160 -64 -70.4002"
+				"point" "1 -32 -64 -70.4002"
+				"point" "2 -32 32 -64"
+				"point" "3 160 32 -64"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -718,6 +1147,13 @@ entity
 		{
 			"id" "3184"
 			"plane" "(160 32 -76.8013) (160 -64 -70.4009) (160 32 -64)"
+			point_data
+			{
+				"numpts" "3"
+				"point" "0 160 32 -76.8"
+				"point" "1 160 -64 -70.4001"
+				"point" "2 160 32 -64"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -729,6 +1165,13 @@ entity
 		{
 			"id" "3183"
 			"plane" "(-32 -64 -70.4009) (-32 32 -76.8014) (-32 32 -64)"
+			point_data
+			{
+				"numpts" "3"
+				"point" "0 -32 -64 -70.4001"
+				"point" "1 -32 32 -76.8"
+				"point" "2 -32 32 -64"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -740,6 +1183,14 @@ entity
 		{
 			"id" "3182"
 			"plane" "(-32 32 -76.8027) (160 32 -76.8027) (160 32 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -32 32 -76.8"
+				"point" "1 160 32 -76.8"
+				"point" "2 160 32 -64"
+				"point" "3 -32 32 -64"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -761,6 +1212,13 @@ entity
 		{
 			"id" "3190"
 			"plane" "(64 -64 -70.4001) (-32 -64 -70.4001) (-32 -160 -64)"
+			point_data
+			{
+				"numpts" "3"
+				"point" "0 64 -64 -70.4"
+				"point" "1 -32 -64 -70.4"
+				"point" "2 -32 -160 -64"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -772,6 +1230,13 @@ entity
 		{
 			"id" "3189"
 			"plane" "(-32 -64 -70.3999) (64 -64 -70.3999) (-32 32 -64)"
+			point_data
+			{
+				"numpts" "3"
+				"point" "0 -32 -64 -70.4"
+				"point" "1 64 -64 -70.4"
+				"point" "2 -32 32 -64"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -783,6 +1248,13 @@ entity
 		{
 			"id" "3188"
 			"plane" "(64 -64 -70.3999) (-32 -160 -64) (-32 32 -64)"
+			point_data
+			{
+				"numpts" "3"
+				"point" "0 64 -64 -70.4"
+				"point" "1 -32 -160 -64"
+				"point" "2 -32 32 -64"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -794,6 +1266,13 @@ entity
 		{
 			"id" "3187"
 			"plane" "(-32 -160.02 -64) (-32 -64 -70.4009) (-32 32 -64)"
+			point_data
+			{
+				"numpts" "3"
+				"point" "0 -32 -160 -64"
+				"point" "1 -32 -64 -70.4"
+				"point" "2 -32 32 -64"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -815,6 +1294,14 @@ entity
 		{
 			"id" "3195"
 			"plane" "(-32 -160 -64) (-32 -64 -70.4004) (160 -64 -70.4004)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 -32 -160 -64"
+				"point" "1 -32 -64 -70.4002"
+				"point" "2 160 -64 -70.4002"
+				"point" "3 160 -160 -64"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -826,6 +1313,14 @@ entity
 		{
 			"id" "3194"
 			"plane" "(160 -64 -70.3999) (-32 -64 -70.3999) (-32 -160 -76.7999)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 160 -64 -70.4002"
+				"point" "1 -32 -64 -70.4002"
+				"point" "2 -32 -160 -76.7999"
+				"point" "3 160 -160 -76.7999"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -837,6 +1332,13 @@ entity
 		{
 			"id" "3193"
 			"plane" "(160 -160 -64) (160 -64 -70.4009) (160 -160 -76.8004)"
+			point_data
+			{
+				"numpts" "3"
+				"point" "0 160 -160 -64"
+				"point" "1 160 -64 -70.4002"
+				"point" "2 160 -160 -76.7999"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -848,6 +1350,13 @@ entity
 		{
 			"id" "3192"
 			"plane" "(-32 -160 -76.8005) (-32 -64 -70.4009) (-32 -160 -64)"
+			point_data
+			{
+				"numpts" "3"
+				"point" "0 -32 -160 -76.7999"
+				"point" "1 -32 -64 -70.4002"
+				"point" "2 -32 -160 -64"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -859,6 +1368,14 @@ entity
 		{
 			"id" "3191"
 			"plane" "(160 -160 -76.8023) (-32 -160 -76.8023) (-32 -160 -64)"
+			point_data
+			{
+				"numpts" "4"
+				"point" "0 160 -160 -76.7999"
+				"point" "1 -32 -160 -76.7999"
+				"point" "2 -32 -160 -64"
+				"point" "3 160 -160 -64"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -880,6 +1397,13 @@ entity
 		{
 			"id" "3199"
 			"plane" "(160 -64 -70.4004) (64 -64 -70.4004) (160 -160 -64)"
+			point_data
+			{
+				"numpts" "3"
+				"point" "0 160 -64 -70.4001"
+				"point" "1 64 -64 -70.4001"
+				"point" "2 160 -160 -64"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -891,6 +1415,13 @@ entity
 		{
 			"id" "3198"
 			"plane" "(160 32 -64) (64 -64 -70.3999) (160 -64 -70.3999)"
+			point_data
+			{
+				"numpts" "3"
+				"point" "0 160 32 -64"
+				"point" "1 64 -64 -70.4002"
+				"point" "2 160 -64 -70.4002"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -902,6 +1433,13 @@ entity
 		{
 			"id" "3197"
 			"plane" "(160 -160 -64) (64 -64 -70.3999) (160 32 -64)"
+			point_data
+			{
+				"numpts" "3"
+				"point" "0 160 -160 -64"
+				"point" "1 64 -64 -70.4002"
+				"point" "2 160 32 -64"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[1 0 0 0] 0.25"
 			"vaxis" "[0 -1 0 0] 0.25"
@@ -913,6 +1451,13 @@ entity
 		{
 			"id" "3196"
 			"plane" "(160 32 -64) (160 -64 -70.4009) (160 -160.021 -64)"
+			point_data
+			{
+				"numpts" "3"
+				"point" "0 160 32 -64"
+				"point" "1 160 -64 -70.4002"
+				"point" "2 160 -160 -64"
+			}
 			"material" "TOOLS/TOOLSINVISIBLE"
 			"uaxis" "[0 1 0 0] 0.25"
 			"vaxis" "[0 0 -1 0] 0.25"
@@ -958,8 +1503,10 @@ entity
 	"model" "models/bee2/triple_wallpipe/straight_c.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "0"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "64 -144 -84"
 	editor
 	{
@@ -984,6 +1531,14 @@ hidden
 				{
 					"id" "2598"
 					"plane" "(508 204 -4) (480 204 -4) (480 176 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 204 -4"
+						"point" "1 480 204 -4"
+						"point" "2 480 176 -4"
+						"point" "3 508 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -995,6 +1550,14 @@ hidden
 				{
 					"id" "2597"
 					"plane" "(480 176 0) (480 208 0) (512 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 176 0"
+						"point" "1 480 208 0"
+						"point" "2 512 208 0"
+						"point" "3 512 176 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1006,6 +1569,14 @@ hidden
 				{
 					"id" "2596"
 					"plane" "(480 204 -4) (508 204 -4) (512 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 204 -4"
+						"point" "1 508 204 -4"
+						"point" "2 512 208 -0"
+						"point" "3 480 208 -0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1017,6 +1588,14 @@ hidden
 				{
 					"id" "2595"
 					"plane" "(508 204 -4) (508 176 -4) (512 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 204 -4"
+						"point" "1 508 176 -4"
+						"point" "2 512 176 0"
+						"point" "3 512 208 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1028,6 +1607,14 @@ hidden
 				{
 					"id" "2594"
 					"plane" "(480 176 -4) (480 204 -4) (480 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 176 -4"
+						"point" "1 480 204 -4"
+						"point" "2 480 208 0"
+						"point" "3 480 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1039,6 +1626,14 @@ hidden
 				{
 					"id" "2593"
 					"plane" "(508 176 -4) (480 176 -4) (480 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 176 -4"
+						"point" "1 480 176 -4"
+						"point" "2 480 176 0"
+						"point" "3 512 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1063,6 +1658,14 @@ hidden
 				{
 					"id" "2604"
 					"plane" "(288 204 -4) (260 204 -4) (260 176 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 204 -4"
+						"point" "1 260 204 -4"
+						"point" "2 260 176 -4"
+						"point" "3 288 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1074,6 +1677,14 @@ hidden
 				{
 					"id" "2603"
 					"plane" "(256 176 0) (256 208 0) (288 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 256 176 0"
+						"point" "1 256 208 0"
+						"point" "2 288 208 0"
+						"point" "3 288 176 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1085,6 +1696,14 @@ hidden
 				{
 					"id" "2602"
 					"plane" "(260 204 -4) (288 204 -4) (288 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 204 -4"
+						"point" "1 288 204 -4"
+						"point" "2 288 208 -0"
+						"point" "3 256 208 -0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1096,6 +1715,14 @@ hidden
 				{
 					"id" "2601"
 					"plane" "(260 176 -4) (260 204 -4) (256 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 176 -4"
+						"point" "1 260 204 -4"
+						"point" "2 256 208 0"
+						"point" "3 256 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1107,6 +1734,14 @@ hidden
 				{
 					"id" "2600"
 					"plane" "(288 204 -4) (288 176 -4) (288 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 204 -4"
+						"point" "1 288 176 -4"
+						"point" "2 288 176 0"
+						"point" "3 288 208 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1118,6 +1753,14 @@ hidden
 				{
 					"id" "2599"
 					"plane" "(288 176 -4) (260 176 -4) (256 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 176 -4"
+						"point" "1 260 176 -4"
+						"point" "2 256 176 0"
+						"point" "3 288 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1142,6 +1785,14 @@ hidden
 				{
 					"id" "2610"
 					"plane" "(352 204 -4) (320 204 -4) (320 176 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 204 -4"
+						"point" "1 320 204 -4"
+						"point" "2 320 176 -4"
+						"point" "3 352 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1153,6 +1804,14 @@ hidden
 				{
 					"id" "2609"
 					"plane" "(320 176 0) (320 208 0) (352 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 176 0"
+						"point" "1 320 208 0"
+						"point" "2 352 208 0"
+						"point" "3 352 176 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1164,6 +1823,14 @@ hidden
 				{
 					"id" "2608"
 					"plane" "(320 204 -4) (352 204 -4) (352 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 204 -4"
+						"point" "1 352 204 -4"
+						"point" "2 352 208 -0"
+						"point" "3 320 208 -0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1175,6 +1842,14 @@ hidden
 				{
 					"id" "2607"
 					"plane" "(352 204 -4) (352 176 -4) (352 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 204 -4"
+						"point" "1 352 176 -4"
+						"point" "2 352 176 0"
+						"point" "3 352 208 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1186,6 +1861,14 @@ hidden
 				{
 					"id" "2606"
 					"plane" "(320 176 -4) (320 204 -4) (320 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 176 -4"
+						"point" "1 320 204 -4"
+						"point" "2 320 208 0"
+						"point" "3 320 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1197,6 +1880,14 @@ hidden
 				{
 					"id" "2605"
 					"plane" "(352 176 -4) (320 176 -4) (320 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 176 -4"
+						"point" "1 320 176 -4"
+						"point" "2 320 176 0"
+						"point" "3 352 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1221,6 +1912,14 @@ hidden
 				{
 					"id" "2616"
 					"plane" "(320 204 -4) (288 204 -4) (288 176 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 204 -4"
+						"point" "1 288 204 -4"
+						"point" "2 288 176 -4"
+						"point" "3 320 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1232,6 +1931,14 @@ hidden
 				{
 					"id" "2615"
 					"plane" "(288 176 0) (288 208 0) (320 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 176 0"
+						"point" "1 288 208 0"
+						"point" "2 320 208 0"
+						"point" "3 320 176 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1243,6 +1950,14 @@ hidden
 				{
 					"id" "2614"
 					"plane" "(288 204 -4) (320 204 -4) (320 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 204 -4"
+						"point" "1 320 204 -4"
+						"point" "2 320 208 -0"
+						"point" "3 288 208 -0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1254,6 +1969,14 @@ hidden
 				{
 					"id" "2613"
 					"plane" "(288 176 -4) (288 204 -4) (288 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 176 -4"
+						"point" "1 288 204 -4"
+						"point" "2 288 208 0"
+						"point" "3 288 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1265,6 +1988,14 @@ hidden
 				{
 					"id" "2612"
 					"plane" "(320 204 -4) (320 176 -4) (320 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 204 -4"
+						"point" "1 320 176 -4"
+						"point" "2 320 176 0"
+						"point" "3 320 208 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1276,6 +2007,14 @@ hidden
 				{
 					"id" "2611"
 					"plane" "(320 176 -4) (288 176 -4) (288 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 176 -4"
+						"point" "1 288 176 -4"
+						"point" "2 288 176 0"
+						"point" "3 320 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1300,6 +2039,14 @@ hidden
 				{
 					"id" "2622"
 					"plane" "(384 204 -4) (352 204 -4) (352 176 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 204 -4"
+						"point" "1 352 204 -4"
+						"point" "2 352 176 -4"
+						"point" "3 384 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1311,6 +2058,14 @@ hidden
 				{
 					"id" "2621"
 					"plane" "(352 176 0) (352 208 0) (384 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 176 0"
+						"point" "1 352 208 0"
+						"point" "2 384 208 0"
+						"point" "3 384 176 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1322,6 +2077,14 @@ hidden
 				{
 					"id" "2620"
 					"plane" "(352 204 -4) (384 204 -4) (384 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 204 -4"
+						"point" "1 384 204 -4"
+						"point" "2 384 208 -0"
+						"point" "3 352 208 -0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1333,6 +2096,14 @@ hidden
 				{
 					"id" "2619"
 					"plane" "(352 176 -4) (352 204 -4) (352 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 176 -4"
+						"point" "1 352 204 -4"
+						"point" "2 352 208 0"
+						"point" "3 352 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1344,6 +2115,14 @@ hidden
 				{
 					"id" "2618"
 					"plane" "(384 204 -4) (384 176 -4) (384 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 204 -4"
+						"point" "1 384 176 -4"
+						"point" "2 384 176 0"
+						"point" "3 384 208 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1355,6 +2134,14 @@ hidden
 				{
 					"id" "2617"
 					"plane" "(384 176 -4) (352 176 -4) (352 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 176 -4"
+						"point" "1 352 176 -4"
+						"point" "2 352 176 0"
+						"point" "3 384 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1379,6 +2166,14 @@ hidden
 				{
 					"id" "2628"
 					"plane" "(416 204 -4) (384 204 -4) (384 176 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 204 -4"
+						"point" "1 384 204 -4"
+						"point" "2 384 176 -4"
+						"point" "3 416 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1390,6 +2185,14 @@ hidden
 				{
 					"id" "2627"
 					"plane" "(384 176 0) (384 208 0) (416 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 176 0"
+						"point" "1 384 208 0"
+						"point" "2 416 208 0"
+						"point" "3 416 176 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1401,6 +2204,14 @@ hidden
 				{
 					"id" "2626"
 					"plane" "(384 204 -4) (416 204 -4) (416 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 204 -4"
+						"point" "1 416 204 -4"
+						"point" "2 416 208 -0"
+						"point" "3 384 208 -0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1412,6 +2223,14 @@ hidden
 				{
 					"id" "2625"
 					"plane" "(384 176 -4) (384 204 -4) (384 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 176 -4"
+						"point" "1 384 204 -4"
+						"point" "2 384 208 0"
+						"point" "3 384 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1423,6 +2242,14 @@ hidden
 				{
 					"id" "2624"
 					"plane" "(416 204 -4) (416 176 -4) (416 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 204 -4"
+						"point" "1 416 176 -4"
+						"point" "2 416 176 0"
+						"point" "3 416 208 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1434,6 +2261,14 @@ hidden
 				{
 					"id" "2623"
 					"plane" "(416 176 -4) (384 176 -4) (384 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 176 -4"
+						"point" "1 384 176 -4"
+						"point" "2 384 176 0"
+						"point" "3 416 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1458,6 +2293,14 @@ hidden
 				{
 					"id" "2634"
 					"plane" "(448 204 -4) (416 204 -4) (416 176 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 204 -4"
+						"point" "1 416 204 -4"
+						"point" "2 416 176 -4"
+						"point" "3 448 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1469,6 +2312,14 @@ hidden
 				{
 					"id" "2633"
 					"plane" "(416 176 0) (416 208 0) (448 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 176 0"
+						"point" "1 416 208 0"
+						"point" "2 448 208 0"
+						"point" "3 448 176 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1480,6 +2331,14 @@ hidden
 				{
 					"id" "2632"
 					"plane" "(416 204 -4) (448 204 -4) (448 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 204 -4"
+						"point" "1 448 204 -4"
+						"point" "2 448 208 -0"
+						"point" "3 416 208 -0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1491,6 +2350,14 @@ hidden
 				{
 					"id" "2631"
 					"plane" "(416 176 -4) (416 204 -4) (416 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 176 -4"
+						"point" "1 416 204 -4"
+						"point" "2 416 208 0"
+						"point" "3 416 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1502,6 +2369,14 @@ hidden
 				{
 					"id" "2630"
 					"plane" "(448 204 -4) (448 176 -4) (448 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 204 -4"
+						"point" "1 448 176 -4"
+						"point" "2 448 176 0"
+						"point" "3 448 208 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1513,6 +2388,14 @@ hidden
 				{
 					"id" "2629"
 					"plane" "(448 176 -4) (416 176 -4) (416 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 176 -4"
+						"point" "1 416 176 -4"
+						"point" "2 416 176 0"
+						"point" "3 448 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1537,6 +2420,14 @@ hidden
 				{
 					"id" "2640"
 					"plane" "(480 204 -4) (448 204 -4) (448 176 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 204 -4"
+						"point" "1 448 204 -4"
+						"point" "2 448 176 -4"
+						"point" "3 480 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1548,6 +2439,14 @@ hidden
 				{
 					"id" "2639"
 					"plane" "(448 176 0) (448 208 0) (480 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 176 0"
+						"point" "1 448 208 0"
+						"point" "2 480 208 0"
+						"point" "3 480 176 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1559,6 +2458,14 @@ hidden
 				{
 					"id" "2638"
 					"plane" "(448 204 -4) (480 204 -4) (480 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 204 -4"
+						"point" "1 480 204 -4"
+						"point" "2 480 208 -0"
+						"point" "3 448 208 -0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1570,6 +2477,14 @@ hidden
 				{
 					"id" "2637"
 					"plane" "(448 176 -4) (448 204 -4) (448 208 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 176 -4"
+						"point" "1 448 204 -4"
+						"point" "2 448 208 0"
+						"point" "3 448 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1581,6 +2496,14 @@ hidden
 				{
 					"id" "2636"
 					"plane" "(480 204 -4) (480 176 -4) (480 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 204 -4"
+						"point" "1 480 176 -4"
+						"point" "2 480 176 0"
+						"point" "3 480 208 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1592,6 +2515,14 @@ hidden
 				{
 					"id" "2635"
 					"plane" "(480 176 -4) (448 176 -4) (448 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 176 -4"
+						"point" "1 448 176 -4"
+						"point" "2 448 176 0"
+						"point" "3 480 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1616,6 +2547,14 @@ hidden
 				{
 					"id" "2646"
 					"plane" "(480 176 -4) (480 144 -4) (508 144 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 176 -4"
+						"point" "1 480 144 -4"
+						"point" "2 508 144 -4"
+						"point" "3 508 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1627,6 +2566,14 @@ hidden
 				{
 					"id" "2645"
 					"plane" "(480 144 0) (480 176 0) (512 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 144 0"
+						"point" "1 480 176 0"
+						"point" "2 512 176 0"
+						"point" "3 512 144 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1638,6 +2585,14 @@ hidden
 				{
 					"id" "2644"
 					"plane" "(508 176 -4) (508 144 -4) (512 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 176 -4"
+						"point" "1 508 144 -4"
+						"point" "2 512 144 0"
+						"point" "3 512 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1649,6 +2604,14 @@ hidden
 				{
 					"id" "2643"
 					"plane" "(480 144 -4) (480 176 -4) (480 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 144 -4"
+						"point" "1 480 176 -4"
+						"point" "2 480 176 0"
+						"point" "3 480 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1660,6 +2623,14 @@ hidden
 				{
 					"id" "2642"
 					"plane" "(480 176 -4) (508 176 -4) (512 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 176 -4"
+						"point" "1 508 176 -4"
+						"point" "2 512 176 0"
+						"point" "3 480 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1671,6 +2642,14 @@ hidden
 				{
 					"id" "2641"
 					"plane" "(508 144 -4) (480 144 -4) (480 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 144 -4"
+						"point" "1 480 144 -4"
+						"point" "2 480 144 0"
+						"point" "3 512 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1695,6 +2674,14 @@ hidden
 				{
 					"id" "2652"
 					"plane" "(260 176 -4) (260 144 -4) (288 144 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 176 -4"
+						"point" "1 260 144 -4"
+						"point" "2 288 144 -4"
+						"point" "3 288 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1706,6 +2693,14 @@ hidden
 				{
 					"id" "2651"
 					"plane" "(256 144 0) (256 176 0) (288 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 256 144 0"
+						"point" "1 256 176 0"
+						"point" "2 288 176 0"
+						"point" "3 288 144 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1717,6 +2712,14 @@ hidden
 				{
 					"id" "2650"
 					"plane" "(260 144 -4) (260 176 -4) (256 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 144 -4"
+						"point" "1 260 176 -4"
+						"point" "2 256 176 0"
+						"point" "3 256 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1728,6 +2731,14 @@ hidden
 				{
 					"id" "2649"
 					"plane" "(288 176 -4) (288 144 -4) (288 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 176 -4"
+						"point" "1 288 144 -4"
+						"point" "2 288 144 0"
+						"point" "3 288 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1739,6 +2750,14 @@ hidden
 				{
 					"id" "2648"
 					"plane" "(260 176 -4) (288 176 -4) (288 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 176 -4"
+						"point" "1 288 176 -4"
+						"point" "2 288 176 0"
+						"point" "3 256 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1750,6 +2769,14 @@ hidden
 				{
 					"id" "2647"
 					"plane" "(288 144 -4) (260 144 -4) (256 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 144 -4"
+						"point" "1 260 144 -4"
+						"point" "2 256 144 0"
+						"point" "3 288 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1774,6 +2801,14 @@ hidden
 				{
 					"id" "2658"
 					"plane" "(320 176 -4) (320 144 -4) (352 144 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 176 -4"
+						"point" "1 320 144 -4"
+						"point" "2 352 144 -4"
+						"point" "3 352 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1785,6 +2820,14 @@ hidden
 				{
 					"id" "2657"
 					"plane" "(320 144 0) (320 176 0) (352 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 144 0"
+						"point" "1 320 176 0"
+						"point" "2 352 176 0"
+						"point" "3 352 144 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1796,6 +2839,14 @@ hidden
 				{
 					"id" "2656"
 					"plane" "(352 176 -4) (352 144 -4) (352 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 176 -4"
+						"point" "1 352 144 -4"
+						"point" "2 352 144 0"
+						"point" "3 352 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1807,6 +2858,14 @@ hidden
 				{
 					"id" "2655"
 					"plane" "(320 144 -4) (320 176 -4) (320 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 144 -4"
+						"point" "1 320 176 -4"
+						"point" "2 320 176 0"
+						"point" "3 320 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1818,6 +2877,14 @@ hidden
 				{
 					"id" "2654"
 					"plane" "(320 176 -4) (352 176 -4) (352 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 176 -4"
+						"point" "1 352 176 -4"
+						"point" "2 352 176 0"
+						"point" "3 320 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1829,6 +2896,14 @@ hidden
 				{
 					"id" "2653"
 					"plane" "(352 144 -4) (320 144 -4) (320 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 144 -4"
+						"point" "1 320 144 -4"
+						"point" "2 320 144 0"
+						"point" "3 352 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1853,6 +2928,14 @@ hidden
 				{
 					"id" "2664"
 					"plane" "(288 176 -4) (288 144 -4) (320 144 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 176 -4"
+						"point" "1 288 144 -4"
+						"point" "2 320 144 -4"
+						"point" "3 320 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1864,6 +2947,14 @@ hidden
 				{
 					"id" "2663"
 					"plane" "(288 144 0) (288 176 0) (320 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 144 0"
+						"point" "1 288 176 0"
+						"point" "2 320 176 0"
+						"point" "3 320 144 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1875,6 +2966,14 @@ hidden
 				{
 					"id" "2662"
 					"plane" "(288 144 -4) (288 176 -4) (288 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 144 -4"
+						"point" "1 288 176 -4"
+						"point" "2 288 176 0"
+						"point" "3 288 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1886,6 +2985,14 @@ hidden
 				{
 					"id" "2661"
 					"plane" "(320 176 -4) (320 144 -4) (320 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 176 -4"
+						"point" "1 320 144 -4"
+						"point" "2 320 144 0"
+						"point" "3 320 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1897,6 +3004,14 @@ hidden
 				{
 					"id" "2660"
 					"plane" "(288 176 -4) (320 176 -4) (320 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 176 -4"
+						"point" "1 320 176 -4"
+						"point" "2 320 176 0"
+						"point" "3 288 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1908,6 +3023,14 @@ hidden
 				{
 					"id" "2659"
 					"plane" "(320 144 -4) (288 144 -4) (288 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 144 -4"
+						"point" "1 288 144 -4"
+						"point" "2 288 144 0"
+						"point" "3 320 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1932,6 +3055,14 @@ hidden
 				{
 					"id" "2670"
 					"plane" "(352 176 -4) (352 144 -4) (384 144 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 176 -4"
+						"point" "1 352 144 -4"
+						"point" "2 384 144 -4"
+						"point" "3 384 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1943,6 +3074,14 @@ hidden
 				{
 					"id" "2669"
 					"plane" "(352 144 0) (352 176 0) (384 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 144 0"
+						"point" "1 352 176 0"
+						"point" "2 384 176 0"
+						"point" "3 384 144 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -1954,6 +3093,14 @@ hidden
 				{
 					"id" "2668"
 					"plane" "(352 144 -4) (352 176 -4) (352 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 144 -4"
+						"point" "1 352 176 -4"
+						"point" "2 352 176 0"
+						"point" "3 352 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1965,6 +3112,14 @@ hidden
 				{
 					"id" "2667"
 					"plane" "(384 176 -4) (384 144 -4) (384 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 176 -4"
+						"point" "1 384 144 -4"
+						"point" "2 384 144 0"
+						"point" "3 384 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1976,6 +3131,14 @@ hidden
 				{
 					"id" "2666"
 					"plane" "(352 176 -4) (384 176 -4) (384 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 176 -4"
+						"point" "1 384 176 -4"
+						"point" "2 384 176 0"
+						"point" "3 352 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -1987,6 +3150,14 @@ hidden
 				{
 					"id" "2665"
 					"plane" "(384 144 -4) (352 144 -4) (352 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 144 -4"
+						"point" "1 352 144 -4"
+						"point" "2 352 144 0"
+						"point" "3 384 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2011,6 +3182,14 @@ hidden
 				{
 					"id" "2676"
 					"plane" "(384 176 -4) (384 144 -4) (416 144 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 176 -4"
+						"point" "1 384 144 -4"
+						"point" "2 416 144 -4"
+						"point" "3 416 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2022,6 +3201,14 @@ hidden
 				{
 					"id" "2675"
 					"plane" "(384 144 0) (384 176 0) (416 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 144 0"
+						"point" "1 384 176 0"
+						"point" "2 416 176 0"
+						"point" "3 416 144 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2033,6 +3220,14 @@ hidden
 				{
 					"id" "2674"
 					"plane" "(384 144 -4) (384 176 -4) (384 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 144 -4"
+						"point" "1 384 176 -4"
+						"point" "2 384 176 0"
+						"point" "3 384 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2044,6 +3239,14 @@ hidden
 				{
 					"id" "2673"
 					"plane" "(416 176 -4) (416 144 -4) (416 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 176 -4"
+						"point" "1 416 144 -4"
+						"point" "2 416 144 0"
+						"point" "3 416 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2055,6 +3258,14 @@ hidden
 				{
 					"id" "2672"
 					"plane" "(384 176 -4) (416 176 -4) (416 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 176 -4"
+						"point" "1 416 176 -4"
+						"point" "2 416 176 0"
+						"point" "3 384 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2066,6 +3277,14 @@ hidden
 				{
 					"id" "2671"
 					"plane" "(416 144 -4) (384 144 -4) (384 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 144 -4"
+						"point" "1 384 144 -4"
+						"point" "2 384 144 0"
+						"point" "3 416 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2090,6 +3309,14 @@ hidden
 				{
 					"id" "2682"
 					"plane" "(416 176 -4) (416 144 -4) (448 144 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 176 -4"
+						"point" "1 416 144 -4"
+						"point" "2 448 144 -4"
+						"point" "3 448 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2101,6 +3328,14 @@ hidden
 				{
 					"id" "2681"
 					"plane" "(416 144 0) (416 176 0) (448 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 144 0"
+						"point" "1 416 176 0"
+						"point" "2 448 176 0"
+						"point" "3 448 144 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2112,6 +3347,14 @@ hidden
 				{
 					"id" "2680"
 					"plane" "(416 144 -4) (416 176 -4) (416 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 144 -4"
+						"point" "1 416 176 -4"
+						"point" "2 416 176 0"
+						"point" "3 416 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2123,6 +3366,14 @@ hidden
 				{
 					"id" "2679"
 					"plane" "(448 176 -4) (448 144 -4) (448 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 176 -4"
+						"point" "1 448 144 -4"
+						"point" "2 448 144 0"
+						"point" "3 448 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2134,6 +3385,14 @@ hidden
 				{
 					"id" "2678"
 					"plane" "(416 176 -4) (448 176 -4) (448 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 176 -4"
+						"point" "1 448 176 -4"
+						"point" "2 448 176 0"
+						"point" "3 416 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2145,6 +3404,14 @@ hidden
 				{
 					"id" "2677"
 					"plane" "(448 144 -4) (416 144 -4) (416 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 144 -4"
+						"point" "1 416 144 -4"
+						"point" "2 416 144 0"
+						"point" "3 448 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2169,6 +3436,14 @@ hidden
 				{
 					"id" "2688"
 					"plane" "(448 176 -4) (448 144 -4) (480 144 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 176 -4"
+						"point" "1 448 144 -4"
+						"point" "2 480 144 -4"
+						"point" "3 480 176 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2180,6 +3455,14 @@ hidden
 				{
 					"id" "2687"
 					"plane" "(448 144 0) (448 176 0) (480 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 144 0"
+						"point" "1 448 176 0"
+						"point" "2 480 176 0"
+						"point" "3 480 144 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2191,6 +3474,14 @@ hidden
 				{
 					"id" "2686"
 					"plane" "(448 144 -4) (448 176 -4) (448 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 144 -4"
+						"point" "1 448 176 -4"
+						"point" "2 448 176 0"
+						"point" "3 448 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2202,6 +3493,14 @@ hidden
 				{
 					"id" "2685"
 					"plane" "(480 176 -4) (480 144 -4) (480 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 176 -4"
+						"point" "1 480 144 -4"
+						"point" "2 480 144 0"
+						"point" "3 480 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2213,6 +3512,14 @@ hidden
 				{
 					"id" "2684"
 					"plane" "(448 176 -4) (480 176 -4) (480 176 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 176 -4"
+						"point" "1 480 176 -4"
+						"point" "2 480 176 0"
+						"point" "3 448 176 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2224,6 +3531,14 @@ hidden
 				{
 					"id" "2683"
 					"plane" "(480 144 -4) (448 144 -4) (448 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 144 -4"
+						"point" "1 448 144 -4"
+						"point" "2 448 144 0"
+						"point" "3 480 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2248,6 +3563,14 @@ hidden
 				{
 					"id" "2694"
 					"plane" "(480 144 -4) (480 112 -4) (508 112 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 144 -4"
+						"point" "1 480 112 -4"
+						"point" "2 508 112 -4"
+						"point" "3 508 144 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2259,6 +3582,14 @@ hidden
 				{
 					"id" "2693"
 					"plane" "(480 112 0) (480 144 0) (512 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 112 0"
+						"point" "1 480 144 0"
+						"point" "2 512 144 0"
+						"point" "3 512 112 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2270,6 +3601,14 @@ hidden
 				{
 					"id" "2692"
 					"plane" "(508 144 -4) (508 112 -4) (512 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 144 -4"
+						"point" "1 508 112 -4"
+						"point" "2 512 112 0"
+						"point" "3 512 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2281,6 +3620,14 @@ hidden
 				{
 					"id" "2691"
 					"plane" "(480 112 -4) (480 144 -4) (480 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 112 -4"
+						"point" "1 480 144 -4"
+						"point" "2 480 144 0"
+						"point" "3 480 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2292,6 +3639,14 @@ hidden
 				{
 					"id" "2690"
 					"plane" "(480 144 -4) (508 144 -4) (512 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 144 -4"
+						"point" "1 508 144 -4"
+						"point" "2 512 144 0"
+						"point" "3 480 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2303,6 +3658,14 @@ hidden
 				{
 					"id" "2689"
 					"plane" "(508 112 -4) (480 112 -4) (480 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 112 -4"
+						"point" "1 480 112 -4"
+						"point" "2 480 112 0"
+						"point" "3 512 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2327,6 +3690,14 @@ hidden
 				{
 					"id" "2700"
 					"plane" "(260 144 -4) (260 112 -4) (288 112 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 144 -4"
+						"point" "1 260 112 -4"
+						"point" "2 288 112 -4"
+						"point" "3 288 144 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2338,6 +3709,14 @@ hidden
 				{
 					"id" "2699"
 					"plane" "(256 112 0) (256 144 0) (288 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 256 112 0"
+						"point" "1 256 144 0"
+						"point" "2 288 144 0"
+						"point" "3 288 112 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2349,6 +3728,14 @@ hidden
 				{
 					"id" "2698"
 					"plane" "(260 112 -4) (260 144 -4) (256 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 112 -4"
+						"point" "1 260 144 -4"
+						"point" "2 256 144 0"
+						"point" "3 256 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2360,6 +3747,14 @@ hidden
 				{
 					"id" "2697"
 					"plane" "(288 144 -4) (288 112 -4) (288 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 144 -4"
+						"point" "1 288 112 -4"
+						"point" "2 288 112 0"
+						"point" "3 288 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2371,6 +3766,14 @@ hidden
 				{
 					"id" "2696"
 					"plane" "(260 144 -4) (288 144 -4) (288 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 144 -4"
+						"point" "1 288 144 -4"
+						"point" "2 288 144 0"
+						"point" "3 256 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2382,6 +3785,14 @@ hidden
 				{
 					"id" "2695"
 					"plane" "(288 112 -4) (260 112 -4) (256 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 112 -4"
+						"point" "1 260 112 -4"
+						"point" "2 256 112 0"
+						"point" "3 288 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2406,6 +3817,14 @@ hidden
 				{
 					"id" "2706"
 					"plane" "(320 144 -4) (320 112 -4) (352 112 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 144 -4"
+						"point" "1 320 112 -4"
+						"point" "2 352 112 -4"
+						"point" "3 352 144 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2417,6 +3836,14 @@ hidden
 				{
 					"id" "2705"
 					"plane" "(320 112 0) (320 144 0) (352 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 112 0"
+						"point" "1 320 144 0"
+						"point" "2 352 144 0"
+						"point" "3 352 112 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2428,6 +3855,14 @@ hidden
 				{
 					"id" "2704"
 					"plane" "(352 144 -4) (352 112 -4) (352 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 144 -4"
+						"point" "1 352 112 -4"
+						"point" "2 352 112 0"
+						"point" "3 352 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2439,6 +3874,14 @@ hidden
 				{
 					"id" "2703"
 					"plane" "(320 112 -4) (320 144 -4) (320 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 112 -4"
+						"point" "1 320 144 -4"
+						"point" "2 320 144 0"
+						"point" "3 320 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2450,6 +3893,14 @@ hidden
 				{
 					"id" "2702"
 					"plane" "(320 144 -4) (352 144 -4) (352 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 144 -4"
+						"point" "1 352 144 -4"
+						"point" "2 352 144 0"
+						"point" "3 320 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2461,6 +3912,14 @@ hidden
 				{
 					"id" "2701"
 					"plane" "(352 112 -4) (320 112 -4) (320 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 112 -4"
+						"point" "1 320 112 -4"
+						"point" "2 320 112 0"
+						"point" "3 352 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2485,6 +3944,14 @@ hidden
 				{
 					"id" "2712"
 					"plane" "(288 144 -4) (288 112 -4) (320 112 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 144 -4"
+						"point" "1 288 112 -4"
+						"point" "2 320 112 -4"
+						"point" "3 320 144 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2496,6 +3963,14 @@ hidden
 				{
 					"id" "2711"
 					"plane" "(288 112 0) (288 144 0) (320 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 112 0"
+						"point" "1 288 144 0"
+						"point" "2 320 144 0"
+						"point" "3 320 112 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2507,6 +3982,14 @@ hidden
 				{
 					"id" "2710"
 					"plane" "(288 112 -4) (288 144 -4) (288 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 112 -4"
+						"point" "1 288 144 -4"
+						"point" "2 288 144 0"
+						"point" "3 288 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2518,6 +4001,14 @@ hidden
 				{
 					"id" "2709"
 					"plane" "(320 144 -4) (320 112 -4) (320 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 144 -4"
+						"point" "1 320 112 -4"
+						"point" "2 320 112 0"
+						"point" "3 320 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2529,6 +4020,14 @@ hidden
 				{
 					"id" "2708"
 					"plane" "(288 144 -4) (320 144 -4) (320 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 144 -4"
+						"point" "1 320 144 -4"
+						"point" "2 320 144 0"
+						"point" "3 288 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2540,6 +4039,14 @@ hidden
 				{
 					"id" "2707"
 					"plane" "(320 112 -4) (288 112 -4) (288 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 112 -4"
+						"point" "1 288 112 -4"
+						"point" "2 288 112 0"
+						"point" "3 320 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2564,6 +4071,14 @@ hidden
 				{
 					"id" "2718"
 					"plane" "(352 144 -4) (352 112 -4) (384 112 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 144 -4"
+						"point" "1 352 112 -4"
+						"point" "2 384 112 -4"
+						"point" "3 384 144 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2575,6 +4090,14 @@ hidden
 				{
 					"id" "2717"
 					"plane" "(352 112 0) (352 144 0) (384 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 112 0"
+						"point" "1 352 144 0"
+						"point" "2 384 144 0"
+						"point" "3 384 112 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2586,6 +4109,14 @@ hidden
 				{
 					"id" "2716"
 					"plane" "(352 112 -4) (352 144 -4) (352 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 112 -4"
+						"point" "1 352 144 -4"
+						"point" "2 352 144 0"
+						"point" "3 352 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2597,6 +4128,14 @@ hidden
 				{
 					"id" "2715"
 					"plane" "(384 144 -4) (384 112 -4) (384 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 144 -4"
+						"point" "1 384 112 -4"
+						"point" "2 384 112 0"
+						"point" "3 384 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2608,6 +4147,14 @@ hidden
 				{
 					"id" "2714"
 					"plane" "(352 144 -4) (384 144 -4) (384 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 144 -4"
+						"point" "1 384 144 -4"
+						"point" "2 384 144 0"
+						"point" "3 352 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2619,6 +4166,14 @@ hidden
 				{
 					"id" "2713"
 					"plane" "(384 112 -4) (352 112 -4) (352 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 112 -4"
+						"point" "1 352 112 -4"
+						"point" "2 352 112 0"
+						"point" "3 384 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2643,6 +4198,14 @@ hidden
 				{
 					"id" "2724"
 					"plane" "(384 144 -4) (384 112 -4) (416 112 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 144 -4"
+						"point" "1 384 112 -4"
+						"point" "2 416 112 -4"
+						"point" "3 416 144 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2654,6 +4217,14 @@ hidden
 				{
 					"id" "2723"
 					"plane" "(384 112 0) (384 144 0) (416 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 112 0"
+						"point" "1 384 144 0"
+						"point" "2 416 144 0"
+						"point" "3 416 112 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2665,6 +4236,14 @@ hidden
 				{
 					"id" "2722"
 					"plane" "(384 112 -4) (384 144 -4) (384 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 112 -4"
+						"point" "1 384 144 -4"
+						"point" "2 384 144 0"
+						"point" "3 384 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2676,6 +4255,14 @@ hidden
 				{
 					"id" "2721"
 					"plane" "(416 144 -4) (416 112 -4) (416 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 144 -4"
+						"point" "1 416 112 -4"
+						"point" "2 416 112 0"
+						"point" "3 416 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2687,6 +4274,14 @@ hidden
 				{
 					"id" "2720"
 					"plane" "(384 144 -4) (416 144 -4) (416 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 144 -4"
+						"point" "1 416 144 -4"
+						"point" "2 416 144 0"
+						"point" "3 384 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2698,6 +4293,14 @@ hidden
 				{
 					"id" "2719"
 					"plane" "(416 112 -4) (384 112 -4) (384 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 112 -4"
+						"point" "1 384 112 -4"
+						"point" "2 384 112 0"
+						"point" "3 416 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2722,6 +4325,14 @@ hidden
 				{
 					"id" "2730"
 					"plane" "(416 144 -4) (416 112 -4) (448 112 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 144 -4"
+						"point" "1 416 112 -4"
+						"point" "2 448 112 -4"
+						"point" "3 448 144 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2733,6 +4344,14 @@ hidden
 				{
 					"id" "2729"
 					"plane" "(416 112 0) (416 144 0) (448 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 112 0"
+						"point" "1 416 144 0"
+						"point" "2 448 144 0"
+						"point" "3 448 112 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2744,6 +4363,14 @@ hidden
 				{
 					"id" "2728"
 					"plane" "(416 112 -4) (416 144 -4) (416 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 112 -4"
+						"point" "1 416 144 -4"
+						"point" "2 416 144 0"
+						"point" "3 416 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2755,6 +4382,14 @@ hidden
 				{
 					"id" "2727"
 					"plane" "(448 144 -4) (448 112 -4) (448 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 144 -4"
+						"point" "1 448 112 -4"
+						"point" "2 448 112 0"
+						"point" "3 448 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2766,6 +4401,14 @@ hidden
 				{
 					"id" "2726"
 					"plane" "(416 144 -4) (448 144 -4) (448 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 144 -4"
+						"point" "1 448 144 -4"
+						"point" "2 448 144 0"
+						"point" "3 416 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2777,6 +4420,14 @@ hidden
 				{
 					"id" "2725"
 					"plane" "(448 112 -4) (416 112 -4) (416 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 112 -4"
+						"point" "1 416 112 -4"
+						"point" "2 416 112 0"
+						"point" "3 448 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2801,6 +4452,14 @@ hidden
 				{
 					"id" "2736"
 					"plane" "(448 144 -4) (448 112 -4) (480 112 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 144 -4"
+						"point" "1 448 112 -4"
+						"point" "2 480 112 -4"
+						"point" "3 480 144 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2812,6 +4471,14 @@ hidden
 				{
 					"id" "2735"
 					"plane" "(448 112 0) (448 144 0) (480 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 112 0"
+						"point" "1 448 144 0"
+						"point" "2 480 144 0"
+						"point" "3 480 112 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2823,6 +4490,14 @@ hidden
 				{
 					"id" "2734"
 					"plane" "(448 112 -4) (448 144 -4) (448 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 112 -4"
+						"point" "1 448 144 -4"
+						"point" "2 448 144 0"
+						"point" "3 448 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2834,6 +4509,14 @@ hidden
 				{
 					"id" "2733"
 					"plane" "(480 144 -4) (480 112 -4) (480 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 144 -4"
+						"point" "1 480 112 -4"
+						"point" "2 480 112 0"
+						"point" "3 480 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2845,6 +4528,14 @@ hidden
 				{
 					"id" "2732"
 					"plane" "(448 144 -4) (480 144 -4) (480 144 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 144 -4"
+						"point" "1 480 144 -4"
+						"point" "2 480 144 0"
+						"point" "3 448 144 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2856,6 +4547,14 @@ hidden
 				{
 					"id" "2731"
 					"plane" "(480 112 -4) (448 112 -4) (448 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 112 -4"
+						"point" "1 448 112 -4"
+						"point" "2 448 112 0"
+						"point" "3 480 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2880,6 +4579,14 @@ hidden
 				{
 					"id" "2742"
 					"plane" "(480 112 -4) (480 80 -4) (508 80 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 112 -4"
+						"point" "1 480 80 -4"
+						"point" "2 508 80 -4"
+						"point" "3 508 112 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2891,6 +4598,14 @@ hidden
 				{
 					"id" "2741"
 					"plane" "(480 80 0) (480 112 0) (512 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 80 0"
+						"point" "1 480 112 0"
+						"point" "2 512 112 0"
+						"point" "3 512 80 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2902,6 +4617,14 @@ hidden
 				{
 					"id" "2740"
 					"plane" "(508 112 -4) (508 80 -4) (512 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 112 -4"
+						"point" "1 508 80 -4"
+						"point" "2 512 80 0"
+						"point" "3 512 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2913,6 +4636,14 @@ hidden
 				{
 					"id" "2739"
 					"plane" "(480 80 -4) (480 112 -4) (480 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 80 -4"
+						"point" "1 480 112 -4"
+						"point" "2 480 112 0"
+						"point" "3 480 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2924,6 +4655,14 @@ hidden
 				{
 					"id" "2738"
 					"plane" "(480 112 -4) (508 112 -4) (512 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 112 -4"
+						"point" "1 508 112 -4"
+						"point" "2 512 112 0"
+						"point" "3 480 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2935,6 +4674,14 @@ hidden
 				{
 					"id" "2737"
 					"plane" "(508 80 -4) (480 80 -4) (480 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 80 -4"
+						"point" "1 480 80 -4"
+						"point" "2 480 80 0"
+						"point" "3 512 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -2959,6 +4706,14 @@ hidden
 				{
 					"id" "2748"
 					"plane" "(260 112 -4) (260 80 -4) (288 80 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 112 -4"
+						"point" "1 260 80 -4"
+						"point" "2 288 80 -4"
+						"point" "3 288 112 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2970,6 +4725,14 @@ hidden
 				{
 					"id" "2747"
 					"plane" "(256 80 0) (256 112 0) (288 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 256 80 0"
+						"point" "1 256 112 0"
+						"point" "2 288 112 0"
+						"point" "3 288 80 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2981,6 +4744,14 @@ hidden
 				{
 					"id" "2746"
 					"plane" "(260 80 -4) (260 112 -4) (256 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 80 -4"
+						"point" "1 260 112 -4"
+						"point" "2 256 112 0"
+						"point" "3 256 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -2992,6 +4763,14 @@ hidden
 				{
 					"id" "2745"
 					"plane" "(288 112 -4) (288 80 -4) (288 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 112 -4"
+						"point" "1 288 80 -4"
+						"point" "2 288 80 0"
+						"point" "3 288 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3003,6 +4782,14 @@ hidden
 				{
 					"id" "2744"
 					"plane" "(260 112 -4) (288 112 -4) (288 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 112 -4"
+						"point" "1 288 112 -4"
+						"point" "2 288 112 0"
+						"point" "3 256 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3014,6 +4801,14 @@ hidden
 				{
 					"id" "2743"
 					"plane" "(288 80 -4) (260 80 -4) (256 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 80 -4"
+						"point" "1 260 80 -4"
+						"point" "2 256 80 0"
+						"point" "3 288 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3038,6 +4833,14 @@ hidden
 				{
 					"id" "2754"
 					"plane" "(320 112 -4) (320 80 -4) (352 80 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 112 -4"
+						"point" "1 320 80 -4"
+						"point" "2 352 80 -4"
+						"point" "3 352 112 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3049,6 +4852,14 @@ hidden
 				{
 					"id" "2753"
 					"plane" "(320 80 0) (320 112 0) (352 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 80 0"
+						"point" "1 320 112 0"
+						"point" "2 352 112 0"
+						"point" "3 352 80 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3060,6 +4871,14 @@ hidden
 				{
 					"id" "2752"
 					"plane" "(352 112 -4) (352 80 -4) (352 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 112 -4"
+						"point" "1 352 80 -4"
+						"point" "2 352 80 0"
+						"point" "3 352 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3071,6 +4890,14 @@ hidden
 				{
 					"id" "2751"
 					"plane" "(320 80 -4) (320 112 -4) (320 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 80 -4"
+						"point" "1 320 112 -4"
+						"point" "2 320 112 0"
+						"point" "3 320 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3082,6 +4909,14 @@ hidden
 				{
 					"id" "2750"
 					"plane" "(320 112 -4) (352 112 -4) (352 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 112 -4"
+						"point" "1 352 112 -4"
+						"point" "2 352 112 0"
+						"point" "3 320 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3093,6 +4928,14 @@ hidden
 				{
 					"id" "2749"
 					"plane" "(352 80 -4) (320 80 -4) (320 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 80 -4"
+						"point" "1 320 80 -4"
+						"point" "2 320 80 0"
+						"point" "3 352 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3117,6 +4960,14 @@ hidden
 				{
 					"id" "2760"
 					"plane" "(288 112 -4) (288 80 -4) (320 80 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 112 -4"
+						"point" "1 288 80 -4"
+						"point" "2 320 80 -4"
+						"point" "3 320 112 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3128,6 +4979,14 @@ hidden
 				{
 					"id" "2759"
 					"plane" "(288 80 0) (288 112 0) (320 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 80 0"
+						"point" "1 288 112 0"
+						"point" "2 320 112 0"
+						"point" "3 320 80 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3139,6 +4998,14 @@ hidden
 				{
 					"id" "2758"
 					"plane" "(288 80 -4) (288 112 -4) (288 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 80 -4"
+						"point" "1 288 112 -4"
+						"point" "2 288 112 0"
+						"point" "3 288 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3150,6 +5017,14 @@ hidden
 				{
 					"id" "2757"
 					"plane" "(320 112 -4) (320 80 -4) (320 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 112 -4"
+						"point" "1 320 80 -4"
+						"point" "2 320 80 0"
+						"point" "3 320 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3161,6 +5036,14 @@ hidden
 				{
 					"id" "2756"
 					"plane" "(288 112 -4) (320 112 -4) (320 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 112 -4"
+						"point" "1 320 112 -4"
+						"point" "2 320 112 0"
+						"point" "3 288 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3172,6 +5055,14 @@ hidden
 				{
 					"id" "2755"
 					"plane" "(320 80 -4) (288 80 -4) (288 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 80 -4"
+						"point" "1 288 80 -4"
+						"point" "2 288 80 0"
+						"point" "3 320 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3196,6 +5087,14 @@ hidden
 				{
 					"id" "2766"
 					"plane" "(352 112 -4) (352 80 -4) (384 80 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 112 -4"
+						"point" "1 352 80 -4"
+						"point" "2 384 80 -4"
+						"point" "3 384 112 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3207,6 +5106,14 @@ hidden
 				{
 					"id" "2765"
 					"plane" "(352 80 0) (352 112 0) (384 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 80 0"
+						"point" "1 352 112 0"
+						"point" "2 384 112 0"
+						"point" "3 384 80 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3218,6 +5125,14 @@ hidden
 				{
 					"id" "2764"
 					"plane" "(352 80 -4) (352 112 -4) (352 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 80 -4"
+						"point" "1 352 112 -4"
+						"point" "2 352 112 0"
+						"point" "3 352 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3229,6 +5144,14 @@ hidden
 				{
 					"id" "2763"
 					"plane" "(384 112 -4) (384 80 -4) (384 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 112 -4"
+						"point" "1 384 80 -4"
+						"point" "2 384 80 0"
+						"point" "3 384 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3240,6 +5163,14 @@ hidden
 				{
 					"id" "2762"
 					"plane" "(352 112 -4) (384 112 -4) (384 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 112 -4"
+						"point" "1 384 112 -4"
+						"point" "2 384 112 0"
+						"point" "3 352 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3251,6 +5182,14 @@ hidden
 				{
 					"id" "2761"
 					"plane" "(384 80 -4) (352 80 -4) (352 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 80 -4"
+						"point" "1 352 80 -4"
+						"point" "2 352 80 0"
+						"point" "3 384 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3275,6 +5214,14 @@ hidden
 				{
 					"id" "2772"
 					"plane" "(384 112 -4) (384 80 -4) (416 80 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 112 -4"
+						"point" "1 384 80 -4"
+						"point" "2 416 80 -4"
+						"point" "3 416 112 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3286,6 +5233,14 @@ hidden
 				{
 					"id" "2771"
 					"plane" "(384 80 0) (384 112 0) (416 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 80 0"
+						"point" "1 384 112 0"
+						"point" "2 416 112 0"
+						"point" "3 416 80 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3297,6 +5252,14 @@ hidden
 				{
 					"id" "2770"
 					"plane" "(384 80 -4) (384 112 -4) (384 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 80 -4"
+						"point" "1 384 112 -4"
+						"point" "2 384 112 0"
+						"point" "3 384 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3308,6 +5271,14 @@ hidden
 				{
 					"id" "2769"
 					"plane" "(416 112 -4) (416 80 -4) (416 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 112 -4"
+						"point" "1 416 80 -4"
+						"point" "2 416 80 0"
+						"point" "3 416 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3319,6 +5290,14 @@ hidden
 				{
 					"id" "2768"
 					"plane" "(384 112 -4) (416 112 -4) (416 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 112 -4"
+						"point" "1 416 112 -4"
+						"point" "2 416 112 0"
+						"point" "3 384 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3330,6 +5309,14 @@ hidden
 				{
 					"id" "2767"
 					"plane" "(416 80 -4) (384 80 -4) (384 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 80 -4"
+						"point" "1 384 80 -4"
+						"point" "2 384 80 0"
+						"point" "3 416 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3354,6 +5341,14 @@ hidden
 				{
 					"id" "2778"
 					"plane" "(416 112 -4) (416 80 -4) (448 80 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 112 -4"
+						"point" "1 416 80 -4"
+						"point" "2 448 80 -4"
+						"point" "3 448 112 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3365,6 +5360,14 @@ hidden
 				{
 					"id" "2777"
 					"plane" "(416 80 0) (416 112 0) (448 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 80 0"
+						"point" "1 416 112 0"
+						"point" "2 448 112 0"
+						"point" "3 448 80 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3376,6 +5379,14 @@ hidden
 				{
 					"id" "2776"
 					"plane" "(416 80 -4) (416 112 -4) (416 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 80 -4"
+						"point" "1 416 112 -4"
+						"point" "2 416 112 0"
+						"point" "3 416 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3387,6 +5398,14 @@ hidden
 				{
 					"id" "2775"
 					"plane" "(448 112 -4) (448 80 -4) (448 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 112 -4"
+						"point" "1 448 80 -4"
+						"point" "2 448 80 0"
+						"point" "3 448 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3398,6 +5417,14 @@ hidden
 				{
 					"id" "2774"
 					"plane" "(416 112 -4) (448 112 -4) (448 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 112 -4"
+						"point" "1 448 112 -4"
+						"point" "2 448 112 0"
+						"point" "3 416 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3409,6 +5436,14 @@ hidden
 				{
 					"id" "2773"
 					"plane" "(448 80 -4) (416 80 -4) (416 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 80 -4"
+						"point" "1 416 80 -4"
+						"point" "2 416 80 0"
+						"point" "3 448 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3433,6 +5468,14 @@ hidden
 				{
 					"id" "2784"
 					"plane" "(448 112 -4) (448 80 -4) (480 80 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 112 -4"
+						"point" "1 448 80 -4"
+						"point" "2 480 80 -4"
+						"point" "3 480 112 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3444,6 +5487,14 @@ hidden
 				{
 					"id" "2783"
 					"plane" "(448 80 0) (448 112 0) (480 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 80 0"
+						"point" "1 448 112 0"
+						"point" "2 480 112 0"
+						"point" "3 480 80 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3455,6 +5506,14 @@ hidden
 				{
 					"id" "2782"
 					"plane" "(448 80 -4) (448 112 -4) (448 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 80 -4"
+						"point" "1 448 112 -4"
+						"point" "2 448 112 0"
+						"point" "3 448 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3466,6 +5525,14 @@ hidden
 				{
 					"id" "2781"
 					"plane" "(480 112 -4) (480 80 -4) (480 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 112 -4"
+						"point" "1 480 80 -4"
+						"point" "2 480 80 0"
+						"point" "3 480 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3477,6 +5544,14 @@ hidden
 				{
 					"id" "2780"
 					"plane" "(448 112 -4) (480 112 -4) (480 112 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 112 -4"
+						"point" "1 480 112 -4"
+						"point" "2 480 112 0"
+						"point" "3 448 112 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3488,6 +5563,14 @@ hidden
 				{
 					"id" "2779"
 					"plane" "(480 80 -4) (448 80 -4) (448 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 80 -4"
+						"point" "1 448 80 -4"
+						"point" "2 448 80 0"
+						"point" "3 480 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3512,6 +5595,14 @@ hidden
 				{
 					"id" "2790"
 					"plane" "(480 80 -4) (480 48 -4) (508 48 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 80 -4"
+						"point" "1 480 48 -4"
+						"point" "2 508 48 -4"
+						"point" "3 508 80 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3523,6 +5614,14 @@ hidden
 				{
 					"id" "2789"
 					"plane" "(480 48 0) (480 80 0) (512 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 48 0"
+						"point" "1 480 80 0"
+						"point" "2 512 80 0"
+						"point" "3 512 48 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3534,6 +5633,14 @@ hidden
 				{
 					"id" "2788"
 					"plane" "(508 80 -4) (508 48 -4) (512 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 80 -4"
+						"point" "1 508 48 -4"
+						"point" "2 512 48 0"
+						"point" "3 512 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3545,6 +5652,14 @@ hidden
 				{
 					"id" "2787"
 					"plane" "(480 48 -4) (480 80 -4) (480 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 48 -4"
+						"point" "1 480 80 -4"
+						"point" "2 480 80 0"
+						"point" "3 480 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3556,6 +5671,14 @@ hidden
 				{
 					"id" "2786"
 					"plane" "(480 80 -4) (508 80 -4) (512 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 80 -4"
+						"point" "1 508 80 -4"
+						"point" "2 512 80 0"
+						"point" "3 480 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3567,6 +5690,14 @@ hidden
 				{
 					"id" "2785"
 					"plane" "(508 48 -4) (480 48 -4) (480 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 48 -4"
+						"point" "1 480 48 -4"
+						"point" "2 480 48 0"
+						"point" "3 512 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3591,6 +5722,14 @@ hidden
 				{
 					"id" "2796"
 					"plane" "(260 80 -4) (260 48 -4) (288 48 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 80 -4"
+						"point" "1 260 48 -4"
+						"point" "2 288 48 -4"
+						"point" "3 288 80 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3602,6 +5741,14 @@ hidden
 				{
 					"id" "2795"
 					"plane" "(256 48 0) (256 80 0) (288 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 256 48 0"
+						"point" "1 256 80 0"
+						"point" "2 288 80 0"
+						"point" "3 288 48 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3613,6 +5760,14 @@ hidden
 				{
 					"id" "2794"
 					"plane" "(260 48 -4) (260 80 -4) (256 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 48 -4"
+						"point" "1 260 80 -4"
+						"point" "2 256 80 0"
+						"point" "3 256 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3624,6 +5779,14 @@ hidden
 				{
 					"id" "2793"
 					"plane" "(288 80 -4) (288 48 -4) (288 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 80 -4"
+						"point" "1 288 48 -4"
+						"point" "2 288 48 0"
+						"point" "3 288 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3635,6 +5798,14 @@ hidden
 				{
 					"id" "2792"
 					"plane" "(260 80 -4) (288 80 -4) (288 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 80 -4"
+						"point" "1 288 80 -4"
+						"point" "2 288 80 0"
+						"point" "3 256 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3646,6 +5817,14 @@ hidden
 				{
 					"id" "2791"
 					"plane" "(288 48 -4) (260 48 -4) (256 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 48 -4"
+						"point" "1 260 48 -4"
+						"point" "2 256 48 0"
+						"point" "3 288 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3670,6 +5849,14 @@ hidden
 				{
 					"id" "2802"
 					"plane" "(320 80 -4) (320 48 -4) (352 48 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 80 -4"
+						"point" "1 320 48 -4"
+						"point" "2 352 48 -4"
+						"point" "3 352 80 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3681,6 +5868,14 @@ hidden
 				{
 					"id" "2801"
 					"plane" "(320 48 0) (320 80 0) (352 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 48 0"
+						"point" "1 320 80 0"
+						"point" "2 352 80 0"
+						"point" "3 352 48 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3692,6 +5887,14 @@ hidden
 				{
 					"id" "2800"
 					"plane" "(352 80 -4) (352 48 -4) (352 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 80 -4"
+						"point" "1 352 48 -4"
+						"point" "2 352 48 0"
+						"point" "3 352 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3703,6 +5906,14 @@ hidden
 				{
 					"id" "2799"
 					"plane" "(320 48 -4) (320 80 -4) (320 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 48 -4"
+						"point" "1 320 80 -4"
+						"point" "2 320 80 0"
+						"point" "3 320 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3714,6 +5925,14 @@ hidden
 				{
 					"id" "2798"
 					"plane" "(320 80 -4) (352 80 -4) (352 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 80 -4"
+						"point" "1 352 80 -4"
+						"point" "2 352 80 0"
+						"point" "3 320 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3725,6 +5944,14 @@ hidden
 				{
 					"id" "2797"
 					"plane" "(352 48 -4) (320 48 -4) (320 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 48 -4"
+						"point" "1 320 48 -4"
+						"point" "2 320 48 0"
+						"point" "3 352 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3749,6 +5976,14 @@ hidden
 				{
 					"id" "2808"
 					"plane" "(288 80 -4) (288 48 -4) (320 48 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 80 -4"
+						"point" "1 288 48 -4"
+						"point" "2 320 48 -4"
+						"point" "3 320 80 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3760,6 +5995,14 @@ hidden
 				{
 					"id" "2807"
 					"plane" "(288 48 0) (288 80 0) (320 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 48 0"
+						"point" "1 288 80 0"
+						"point" "2 320 80 0"
+						"point" "3 320 48 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3771,6 +6014,14 @@ hidden
 				{
 					"id" "2806"
 					"plane" "(288 48 -4) (288 80 -4) (288 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 48 -4"
+						"point" "1 288 80 -4"
+						"point" "2 288 80 0"
+						"point" "3 288 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3782,6 +6033,14 @@ hidden
 				{
 					"id" "2805"
 					"plane" "(320 80 -4) (320 48 -4) (320 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 80 -4"
+						"point" "1 320 48 -4"
+						"point" "2 320 48 0"
+						"point" "3 320 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3793,6 +6052,14 @@ hidden
 				{
 					"id" "2804"
 					"plane" "(288 80 -4) (320 80 -4) (320 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 80 -4"
+						"point" "1 320 80 -4"
+						"point" "2 320 80 0"
+						"point" "3 288 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3804,6 +6071,14 @@ hidden
 				{
 					"id" "2803"
 					"plane" "(320 48 -4) (288 48 -4) (288 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 48 -4"
+						"point" "1 288 48 -4"
+						"point" "2 288 48 0"
+						"point" "3 320 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3828,6 +6103,14 @@ hidden
 				{
 					"id" "2814"
 					"plane" "(352 80 -4) (352 48 -4) (384 48 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 80 -4"
+						"point" "1 352 48 -4"
+						"point" "2 384 48 -4"
+						"point" "3 384 80 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3839,6 +6122,14 @@ hidden
 				{
 					"id" "2813"
 					"plane" "(352 48 0) (352 80 0) (384 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 48 0"
+						"point" "1 352 80 0"
+						"point" "2 384 80 0"
+						"point" "3 384 48 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3850,6 +6141,14 @@ hidden
 				{
 					"id" "2812"
 					"plane" "(352 48 -4) (352 80 -4) (352 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 48 -4"
+						"point" "1 352 80 -4"
+						"point" "2 352 80 0"
+						"point" "3 352 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3861,6 +6160,14 @@ hidden
 				{
 					"id" "2811"
 					"plane" "(384 80 -4) (384 48 -4) (384 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 80 -4"
+						"point" "1 384 48 -4"
+						"point" "2 384 48 0"
+						"point" "3 384 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3872,6 +6179,14 @@ hidden
 				{
 					"id" "2810"
 					"plane" "(352 80 -4) (384 80 -4) (384 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 80 -4"
+						"point" "1 384 80 -4"
+						"point" "2 384 80 0"
+						"point" "3 352 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3883,6 +6198,14 @@ hidden
 				{
 					"id" "2809"
 					"plane" "(384 48 -4) (352 48 -4) (352 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 48 -4"
+						"point" "1 352 48 -4"
+						"point" "2 352 48 0"
+						"point" "3 384 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3907,6 +6230,14 @@ hidden
 				{
 					"id" "2820"
 					"plane" "(384 80 -4) (384 48 -4) (416 48 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 80 -4"
+						"point" "1 384 48 -4"
+						"point" "2 416 48 -4"
+						"point" "3 416 80 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3918,6 +6249,14 @@ hidden
 				{
 					"id" "2819"
 					"plane" "(384 48 0) (384 80 0) (416 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 48 0"
+						"point" "1 384 80 0"
+						"point" "2 416 80 0"
+						"point" "3 416 48 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3929,6 +6268,14 @@ hidden
 				{
 					"id" "2818"
 					"plane" "(384 48 -4) (384 80 -4) (384 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 48 -4"
+						"point" "1 384 80 -4"
+						"point" "2 384 80 0"
+						"point" "3 384 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3940,6 +6287,14 @@ hidden
 				{
 					"id" "2817"
 					"plane" "(416 80 -4) (416 48 -4) (416 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 80 -4"
+						"point" "1 416 48 -4"
+						"point" "2 416 48 0"
+						"point" "3 416 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3951,6 +6306,14 @@ hidden
 				{
 					"id" "2816"
 					"plane" "(384 80 -4) (416 80 -4) (416 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 80 -4"
+						"point" "1 416 80 -4"
+						"point" "2 416 80 0"
+						"point" "3 384 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3962,6 +6325,14 @@ hidden
 				{
 					"id" "2815"
 					"plane" "(416 48 -4) (384 48 -4) (384 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 48 -4"
+						"point" "1 384 48 -4"
+						"point" "2 384 48 0"
+						"point" "3 416 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -3986,6 +6357,14 @@ hidden
 				{
 					"id" "2826"
 					"plane" "(416 80 -4) (416 48 -4) (448 48 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 80 -4"
+						"point" "1 416 48 -4"
+						"point" "2 448 48 -4"
+						"point" "3 448 80 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -3997,6 +6376,14 @@ hidden
 				{
 					"id" "2825"
 					"plane" "(416 48 0) (416 80 0) (448 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 48 0"
+						"point" "1 416 80 0"
+						"point" "2 448 80 0"
+						"point" "3 448 48 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4008,6 +6395,14 @@ hidden
 				{
 					"id" "2824"
 					"plane" "(416 48 -4) (416 80 -4) (416 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 48 -4"
+						"point" "1 416 80 -4"
+						"point" "2 416 80 0"
+						"point" "3 416 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4019,6 +6414,14 @@ hidden
 				{
 					"id" "2823"
 					"plane" "(448 80 -4) (448 48 -4) (448 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 80 -4"
+						"point" "1 448 48 -4"
+						"point" "2 448 48 0"
+						"point" "3 448 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4030,6 +6433,14 @@ hidden
 				{
 					"id" "2822"
 					"plane" "(416 80 -4) (448 80 -4) (448 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 80 -4"
+						"point" "1 448 80 -4"
+						"point" "2 448 80 0"
+						"point" "3 416 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4041,6 +6452,14 @@ hidden
 				{
 					"id" "2821"
 					"plane" "(448 48 -4) (416 48 -4) (416 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 48 -4"
+						"point" "1 416 48 -4"
+						"point" "2 416 48 0"
+						"point" "3 448 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4065,6 +6484,14 @@ hidden
 				{
 					"id" "2832"
 					"plane" "(448 80 -4) (448 48 -4) (480 48 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 80 -4"
+						"point" "1 448 48 -4"
+						"point" "2 480 48 -4"
+						"point" "3 480 80 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4076,6 +6503,14 @@ hidden
 				{
 					"id" "2831"
 					"plane" "(448 48 0) (448 80 0) (480 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 48 0"
+						"point" "1 448 80 0"
+						"point" "2 480 80 0"
+						"point" "3 480 48 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4087,6 +6522,14 @@ hidden
 				{
 					"id" "2830"
 					"plane" "(448 48 -4) (448 80 -4) (448 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 48 -4"
+						"point" "1 448 80 -4"
+						"point" "2 448 80 0"
+						"point" "3 448 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4098,6 +6541,14 @@ hidden
 				{
 					"id" "2829"
 					"plane" "(480 80 -4) (480 48 -4) (480 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 80 -4"
+						"point" "1 480 48 -4"
+						"point" "2 480 48 0"
+						"point" "3 480 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4109,6 +6560,14 @@ hidden
 				{
 					"id" "2828"
 					"plane" "(448 80 -4) (480 80 -4) (480 80 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 80 -4"
+						"point" "1 480 80 -4"
+						"point" "2 480 80 0"
+						"point" "3 448 80 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4120,6 +6579,14 @@ hidden
 				{
 					"id" "2827"
 					"plane" "(480 48 -4) (448 48 -4) (448 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 48 -4"
+						"point" "1 448 48 -4"
+						"point" "2 448 48 0"
+						"point" "3 480 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4144,6 +6611,14 @@ hidden
 				{
 					"id" "2838"
 					"plane" "(480 48 -4) (480 16 -4) (508 16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 48 -4"
+						"point" "1 480 16 -4"
+						"point" "2 508 16 -4"
+						"point" "3 508 48 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4155,6 +6630,14 @@ hidden
 				{
 					"id" "2837"
 					"plane" "(480 16 0) (480 48 0) (512 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 16 0"
+						"point" "1 480 48 0"
+						"point" "2 512 48 0"
+						"point" "3 512 16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4166,6 +6649,14 @@ hidden
 				{
 					"id" "2836"
 					"plane" "(508 48 -4) (508 16 -4) (512 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 48 -4"
+						"point" "1 508 16 -4"
+						"point" "2 512 16 0"
+						"point" "3 512 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4177,6 +6668,14 @@ hidden
 				{
 					"id" "2835"
 					"plane" "(480 16 -4) (480 48 -4) (480 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 16 -4"
+						"point" "1 480 48 -4"
+						"point" "2 480 48 0"
+						"point" "3 480 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4188,6 +6687,14 @@ hidden
 				{
 					"id" "2834"
 					"plane" "(480 48 -4) (508 48 -4) (512 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 48 -4"
+						"point" "1 508 48 -4"
+						"point" "2 512 48 0"
+						"point" "3 480 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4199,6 +6706,14 @@ hidden
 				{
 					"id" "2833"
 					"plane" "(508 16 -4) (480 16 -4) (480 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 16 -4"
+						"point" "1 480 16 -4"
+						"point" "2 480 16 0"
+						"point" "3 512 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4223,6 +6738,14 @@ hidden
 				{
 					"id" "2844"
 					"plane" "(260 48 -4) (260 16 -4) (288 16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 48 -4"
+						"point" "1 260 16 -4"
+						"point" "2 288 16 -4"
+						"point" "3 288 48 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4234,6 +6757,14 @@ hidden
 				{
 					"id" "2843"
 					"plane" "(256 16 0) (256 48 0) (288 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 256 16 0"
+						"point" "1 256 48 0"
+						"point" "2 288 48 0"
+						"point" "3 288 16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4245,6 +6776,14 @@ hidden
 				{
 					"id" "2842"
 					"plane" "(260 16 -4) (260 48 -4) (256 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 16 -4"
+						"point" "1 260 48 -4"
+						"point" "2 256 48 0"
+						"point" "3 256 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4256,6 +6795,14 @@ hidden
 				{
 					"id" "2841"
 					"plane" "(288 48 -4) (288 16 -4) (288 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 48 -4"
+						"point" "1 288 16 -4"
+						"point" "2 288 16 0"
+						"point" "3 288 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4267,6 +6814,14 @@ hidden
 				{
 					"id" "2840"
 					"plane" "(260 48 -4) (288 48 -4) (288 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 48 -4"
+						"point" "1 288 48 -4"
+						"point" "2 288 48 0"
+						"point" "3 256 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4278,6 +6833,14 @@ hidden
 				{
 					"id" "2839"
 					"plane" "(288 16 -4) (260 16 -4) (256 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 16 -4"
+						"point" "1 260 16 -4"
+						"point" "2 256 16 0"
+						"point" "3 288 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4302,6 +6865,14 @@ hidden
 				{
 					"id" "2850"
 					"plane" "(320 48 -4) (320 16 -4) (352 16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 48 -4"
+						"point" "1 320 16 -4"
+						"point" "2 352 16 -4"
+						"point" "3 352 48 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4313,6 +6884,14 @@ hidden
 				{
 					"id" "2849"
 					"plane" "(320 16 0) (320 48 0) (352 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 16 0"
+						"point" "1 320 48 0"
+						"point" "2 352 48 0"
+						"point" "3 352 16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4324,6 +6903,14 @@ hidden
 				{
 					"id" "2848"
 					"plane" "(352 48 -4) (352 16 -4) (352 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 48 -4"
+						"point" "1 352 16 -4"
+						"point" "2 352 16 0"
+						"point" "3 352 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4335,6 +6922,14 @@ hidden
 				{
 					"id" "2847"
 					"plane" "(320 16 -4) (320 48 -4) (320 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 16 -4"
+						"point" "1 320 48 -4"
+						"point" "2 320 48 0"
+						"point" "3 320 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4346,6 +6941,14 @@ hidden
 				{
 					"id" "2846"
 					"plane" "(320 48 -4) (352 48 -4) (352 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 48 -4"
+						"point" "1 352 48 -4"
+						"point" "2 352 48 0"
+						"point" "3 320 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4357,6 +6960,14 @@ hidden
 				{
 					"id" "2845"
 					"plane" "(352 16 -4) (320 16 -4) (320 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 16 -4"
+						"point" "1 320 16 -4"
+						"point" "2 320 16 0"
+						"point" "3 352 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4381,6 +6992,14 @@ hidden
 				{
 					"id" "2856"
 					"plane" "(288 48 -4) (288 16 -4) (320 16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 48 -4"
+						"point" "1 288 16 -4"
+						"point" "2 320 16 -4"
+						"point" "3 320 48 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4392,6 +7011,14 @@ hidden
 				{
 					"id" "2855"
 					"plane" "(288 16 0) (288 48 0) (320 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 16 0"
+						"point" "1 288 48 0"
+						"point" "2 320 48 0"
+						"point" "3 320 16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4403,6 +7030,14 @@ hidden
 				{
 					"id" "2854"
 					"plane" "(288 16 -4) (288 48 -4) (288 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 16 -4"
+						"point" "1 288 48 -4"
+						"point" "2 288 48 0"
+						"point" "3 288 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4414,6 +7049,14 @@ hidden
 				{
 					"id" "2853"
 					"plane" "(320 48 -4) (320 16 -4) (320 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 48 -4"
+						"point" "1 320 16 -4"
+						"point" "2 320 16 0"
+						"point" "3 320 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4425,6 +7068,14 @@ hidden
 				{
 					"id" "2852"
 					"plane" "(288 48 -4) (320 48 -4) (320 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 48 -4"
+						"point" "1 320 48 -4"
+						"point" "2 320 48 0"
+						"point" "3 288 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4436,6 +7087,14 @@ hidden
 				{
 					"id" "2851"
 					"plane" "(320 16 -4) (288 16 -4) (288 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 16 -4"
+						"point" "1 288 16 -4"
+						"point" "2 288 16 0"
+						"point" "3 320 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4460,6 +7119,14 @@ hidden
 				{
 					"id" "2862"
 					"plane" "(352 48 -4) (352 16 -4) (384 16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 48 -4"
+						"point" "1 352 16 -4"
+						"point" "2 384 16 -4"
+						"point" "3 384 48 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4471,6 +7138,14 @@ hidden
 				{
 					"id" "2861"
 					"plane" "(352 16 0) (352 48 0) (384 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 16 0"
+						"point" "1 352 48 0"
+						"point" "2 384 48 0"
+						"point" "3 384 16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4482,6 +7157,14 @@ hidden
 				{
 					"id" "2860"
 					"plane" "(352 16 -4) (352 48 -4) (352 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 16 -4"
+						"point" "1 352 48 -4"
+						"point" "2 352 48 0"
+						"point" "3 352 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4493,6 +7176,14 @@ hidden
 				{
 					"id" "2859"
 					"plane" "(384 48 -4) (384 16 -4) (384 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 48 -4"
+						"point" "1 384 16 -4"
+						"point" "2 384 16 0"
+						"point" "3 384 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4504,6 +7195,14 @@ hidden
 				{
 					"id" "2858"
 					"plane" "(352 48 -4) (384 48 -4) (384 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 48 -4"
+						"point" "1 384 48 -4"
+						"point" "2 384 48 0"
+						"point" "3 352 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4515,6 +7214,14 @@ hidden
 				{
 					"id" "2857"
 					"plane" "(384 16 -4) (352 16 -4) (352 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 16 -4"
+						"point" "1 352 16 -4"
+						"point" "2 352 16 0"
+						"point" "3 384 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4539,6 +7246,14 @@ hidden
 				{
 					"id" "2868"
 					"plane" "(384 48 -4) (384 16 -4) (416 16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 48 -4"
+						"point" "1 384 16 -4"
+						"point" "2 416 16 -4"
+						"point" "3 416 48 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4550,6 +7265,14 @@ hidden
 				{
 					"id" "2867"
 					"plane" "(384 16 0) (384 48 0) (416 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 16 0"
+						"point" "1 384 48 0"
+						"point" "2 416 48 0"
+						"point" "3 416 16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4561,6 +7284,14 @@ hidden
 				{
 					"id" "2866"
 					"plane" "(384 16 -4) (384 48 -4) (384 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 16 -4"
+						"point" "1 384 48 -4"
+						"point" "2 384 48 0"
+						"point" "3 384 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4572,6 +7303,14 @@ hidden
 				{
 					"id" "2865"
 					"plane" "(416 48 -4) (416 16 -4) (416 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 48 -4"
+						"point" "1 416 16 -4"
+						"point" "2 416 16 0"
+						"point" "3 416 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4583,6 +7322,14 @@ hidden
 				{
 					"id" "2864"
 					"plane" "(384 48 -4) (416 48 -4) (416 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 48 -4"
+						"point" "1 416 48 -4"
+						"point" "2 416 48 0"
+						"point" "3 384 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4594,6 +7341,14 @@ hidden
 				{
 					"id" "2863"
 					"plane" "(416 16 -4) (384 16 -4) (384 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 16 -4"
+						"point" "1 384 16 -4"
+						"point" "2 384 16 0"
+						"point" "3 416 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4618,6 +7373,14 @@ hidden
 				{
 					"id" "2874"
 					"plane" "(416 48 -4) (416 16 -4) (448 16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 48 -4"
+						"point" "1 416 16 -4"
+						"point" "2 448 16 -4"
+						"point" "3 448 48 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4629,6 +7392,14 @@ hidden
 				{
 					"id" "2873"
 					"plane" "(416 16 0) (416 48 0) (448 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 16 0"
+						"point" "1 416 48 0"
+						"point" "2 448 48 0"
+						"point" "3 448 16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4640,6 +7411,14 @@ hidden
 				{
 					"id" "2872"
 					"plane" "(416 16 -4) (416 48 -4) (416 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 16 -4"
+						"point" "1 416 48 -4"
+						"point" "2 416 48 0"
+						"point" "3 416 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4651,6 +7430,14 @@ hidden
 				{
 					"id" "2871"
 					"plane" "(448 48 -4) (448 16 -4) (448 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 48 -4"
+						"point" "1 448 16 -4"
+						"point" "2 448 16 0"
+						"point" "3 448 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4662,6 +7449,14 @@ hidden
 				{
 					"id" "2870"
 					"plane" "(416 48 -4) (448 48 -4) (448 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 48 -4"
+						"point" "1 448 48 -4"
+						"point" "2 448 48 0"
+						"point" "3 416 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4673,6 +7468,14 @@ hidden
 				{
 					"id" "2869"
 					"plane" "(448 16 -4) (416 16 -4) (416 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 16 -4"
+						"point" "1 416 16 -4"
+						"point" "2 416 16 0"
+						"point" "3 448 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4697,6 +7500,14 @@ hidden
 				{
 					"id" "2880"
 					"plane" "(448 48 -4) (448 16 -4) (480 16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 48 -4"
+						"point" "1 448 16 -4"
+						"point" "2 480 16 -4"
+						"point" "3 480 48 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4708,6 +7519,14 @@ hidden
 				{
 					"id" "2879"
 					"plane" "(448 16 0) (448 48 0) (480 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 16 0"
+						"point" "1 448 48 0"
+						"point" "2 480 48 0"
+						"point" "3 480 16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4719,6 +7538,14 @@ hidden
 				{
 					"id" "2878"
 					"plane" "(448 16 -4) (448 48 -4) (448 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 16 -4"
+						"point" "1 448 48 -4"
+						"point" "2 448 48 0"
+						"point" "3 448 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4730,6 +7557,14 @@ hidden
 				{
 					"id" "2877"
 					"plane" "(480 48 -4) (480 16 -4) (480 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 48 -4"
+						"point" "1 480 16 -4"
+						"point" "2 480 16 0"
+						"point" "3 480 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4741,6 +7576,14 @@ hidden
 				{
 					"id" "2876"
 					"plane" "(448 48 -4) (480 48 -4) (480 48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 48 -4"
+						"point" "1 480 48 -4"
+						"point" "2 480 48 0"
+						"point" "3 448 48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4752,6 +7595,14 @@ hidden
 				{
 					"id" "2875"
 					"plane" "(480 16 -4) (448 16 -4) (448 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 16 -4"
+						"point" "1 448 16 -4"
+						"point" "2 448 16 0"
+						"point" "3 480 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4776,6 +7627,14 @@ hidden
 				{
 					"id" "2886"
 					"plane" "(480 16 -4) (480 -16 -4) (508 -16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 16 -4"
+						"point" "1 480 -16 -4"
+						"point" "2 508 -16 -4"
+						"point" "3 508 16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4787,6 +7646,14 @@ hidden
 				{
 					"id" "2885"
 					"plane" "(480 -16 0) (480 16 0) (512 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 -16 0"
+						"point" "1 480 16 0"
+						"point" "2 512 16 0"
+						"point" "3 512 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4798,6 +7665,14 @@ hidden
 				{
 					"id" "2884"
 					"plane" "(508 16 -4) (508 -16 -4) (512 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 16 -4"
+						"point" "1 508 -16 -4"
+						"point" "2 512 -16 0"
+						"point" "3 512 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4809,6 +7684,14 @@ hidden
 				{
 					"id" "2883"
 					"plane" "(480 -16 -4) (480 16 -4) (480 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 -16 -4"
+						"point" "1 480 16 -4"
+						"point" "2 480 16 0"
+						"point" "3 480 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4820,6 +7703,14 @@ hidden
 				{
 					"id" "2882"
 					"plane" "(480 16 -4) (508 16 -4) (512 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 16 -4"
+						"point" "1 508 16 -4"
+						"point" "2 512 16 0"
+						"point" "3 480 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4831,6 +7722,14 @@ hidden
 				{
 					"id" "2881"
 					"plane" "(508 -16 -4) (480 -16 -4) (480 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 -16 -4"
+						"point" "1 480 -16 -4"
+						"point" "2 480 -16 0"
+						"point" "3 512 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4855,6 +7754,14 @@ hidden
 				{
 					"id" "2892"
 					"plane" "(260 16 -4) (260 -16 -4) (288 -16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 16 -4"
+						"point" "1 260 -16 -4"
+						"point" "2 288 -16 -4"
+						"point" "3 288 16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4866,6 +7773,14 @@ hidden
 				{
 					"id" "2891"
 					"plane" "(256 -16 0) (256 16 0) (288 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 256 -16 0"
+						"point" "1 256 16 0"
+						"point" "2 288 16 0"
+						"point" "3 288 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4877,6 +7792,14 @@ hidden
 				{
 					"id" "2890"
 					"plane" "(260 -16 -4) (260 16 -4) (256 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 -16 -4"
+						"point" "1 260 16 -4"
+						"point" "2 256 16 0"
+						"point" "3 256 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4888,6 +7811,14 @@ hidden
 				{
 					"id" "2889"
 					"plane" "(288 16 -4) (288 -16 -4) (288 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 16 -4"
+						"point" "1 288 -16 -4"
+						"point" "2 288 -16 0"
+						"point" "3 288 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4899,6 +7830,14 @@ hidden
 				{
 					"id" "2888"
 					"plane" "(260 16 -4) (288 16 -4) (288 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 16 -4"
+						"point" "1 288 16 -4"
+						"point" "2 288 16 0"
+						"point" "3 256 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4910,6 +7849,14 @@ hidden
 				{
 					"id" "2887"
 					"plane" "(288 -16 -4) (260 -16 -4) (256 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 -16 -4"
+						"point" "1 260 -16 -4"
+						"point" "2 256 -16 0"
+						"point" "3 288 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4934,6 +7881,14 @@ hidden
 				{
 					"id" "2898"
 					"plane" "(320 16 -4) (320 -16 -4) (352 -16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 16 -4"
+						"point" "1 320 -16 -4"
+						"point" "2 352 -16 -4"
+						"point" "3 352 16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4945,6 +7900,14 @@ hidden
 				{
 					"id" "2897"
 					"plane" "(320 -16 0) (320 16 0) (352 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 -16 0"
+						"point" "1 320 16 0"
+						"point" "2 352 16 0"
+						"point" "3 352 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -4956,6 +7919,14 @@ hidden
 				{
 					"id" "2896"
 					"plane" "(352 16 -4) (352 -16 -4) (352 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 16 -4"
+						"point" "1 352 -16 -4"
+						"point" "2 352 -16 0"
+						"point" "3 352 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4967,6 +7938,14 @@ hidden
 				{
 					"id" "2895"
 					"plane" "(320 -16 -4) (320 16 -4) (320 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 -16 -4"
+						"point" "1 320 16 -4"
+						"point" "2 320 16 0"
+						"point" "3 320 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4978,6 +7957,14 @@ hidden
 				{
 					"id" "2894"
 					"plane" "(320 16 -4) (352 16 -4) (352 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 16 -4"
+						"point" "1 352 16 -4"
+						"point" "2 352 16 0"
+						"point" "3 320 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -4989,6 +7976,14 @@ hidden
 				{
 					"id" "2893"
 					"plane" "(352 -16 -4) (320 -16 -4) (320 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 -16 -4"
+						"point" "1 320 -16 -4"
+						"point" "2 320 -16 0"
+						"point" "3 352 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5013,6 +8008,14 @@ hidden
 				{
 					"id" "2904"
 					"plane" "(288 16 -4) (288 -16 -4) (320 -16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 16 -4"
+						"point" "1 288 -16 -4"
+						"point" "2 320 -16 -4"
+						"point" "3 320 16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5024,6 +8027,14 @@ hidden
 				{
 					"id" "2903"
 					"plane" "(288 -16 0) (288 16 0) (320 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 -16 0"
+						"point" "1 288 16 0"
+						"point" "2 320 16 0"
+						"point" "3 320 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5035,6 +8046,14 @@ hidden
 				{
 					"id" "2902"
 					"plane" "(288 -16 -4) (288 16 -4) (288 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 -16 -4"
+						"point" "1 288 16 -4"
+						"point" "2 288 16 0"
+						"point" "3 288 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5046,6 +8065,14 @@ hidden
 				{
 					"id" "2901"
 					"plane" "(320 16 -4) (320 -16 -4) (320 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 16 -4"
+						"point" "1 320 -16 -4"
+						"point" "2 320 -16 0"
+						"point" "3 320 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5057,6 +8084,14 @@ hidden
 				{
 					"id" "2900"
 					"plane" "(288 16 -4) (320 16 -4) (320 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 16 -4"
+						"point" "1 320 16 -4"
+						"point" "2 320 16 0"
+						"point" "3 288 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5068,6 +8103,14 @@ hidden
 				{
 					"id" "2899"
 					"plane" "(320 -16 -4) (288 -16 -4) (288 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 -16 -4"
+						"point" "1 288 -16 -4"
+						"point" "2 288 -16 0"
+						"point" "3 320 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5092,6 +8135,14 @@ hidden
 				{
 					"id" "2910"
 					"plane" "(352 16 -4) (352 -16 -4) (384 -16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 16 -4"
+						"point" "1 352 -16 -4"
+						"point" "2 384 -16 -4"
+						"point" "3 384 16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5103,6 +8154,14 @@ hidden
 				{
 					"id" "2909"
 					"plane" "(352 -16 0) (352 16 0) (384 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 -16 0"
+						"point" "1 352 16 0"
+						"point" "2 384 16 0"
+						"point" "3 384 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5114,6 +8173,14 @@ hidden
 				{
 					"id" "2908"
 					"plane" "(352 -16 -4) (352 16 -4) (352 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 -16 -4"
+						"point" "1 352 16 -4"
+						"point" "2 352 16 0"
+						"point" "3 352 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5125,6 +8192,14 @@ hidden
 				{
 					"id" "2907"
 					"plane" "(384 16 -4) (384 -16 -4) (384 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 16 -4"
+						"point" "1 384 -16 -4"
+						"point" "2 384 -16 0"
+						"point" "3 384 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5136,6 +8211,14 @@ hidden
 				{
 					"id" "2906"
 					"plane" "(352 16 -4) (384 16 -4) (384 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 16 -4"
+						"point" "1 384 16 -4"
+						"point" "2 384 16 0"
+						"point" "3 352 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5147,6 +8230,14 @@ hidden
 				{
 					"id" "2905"
 					"plane" "(384 -16 -4) (352 -16 -4) (352 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 -16 -4"
+						"point" "1 352 -16 -4"
+						"point" "2 352 -16 0"
+						"point" "3 384 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5171,6 +8262,14 @@ hidden
 				{
 					"id" "2916"
 					"plane" "(384 16 -4) (384 -16 -4) (416 -16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 16 -4"
+						"point" "1 384 -16 -4"
+						"point" "2 416 -16 -4"
+						"point" "3 416 16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5182,6 +8281,14 @@ hidden
 				{
 					"id" "2915"
 					"plane" "(384 -16 0) (384 16 0) (416 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 -16 0"
+						"point" "1 384 16 0"
+						"point" "2 416 16 0"
+						"point" "3 416 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5193,6 +8300,14 @@ hidden
 				{
 					"id" "2914"
 					"plane" "(384 -16 -4) (384 16 -4) (384 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 -16 -4"
+						"point" "1 384 16 -4"
+						"point" "2 384 16 0"
+						"point" "3 384 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5204,6 +8319,14 @@ hidden
 				{
 					"id" "2913"
 					"plane" "(416 16 -4) (416 -16 -4) (416 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 16 -4"
+						"point" "1 416 -16 -4"
+						"point" "2 416 -16 0"
+						"point" "3 416 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5215,6 +8338,14 @@ hidden
 				{
 					"id" "2912"
 					"plane" "(384 16 -4) (416 16 -4) (416 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 16 -4"
+						"point" "1 416 16 -4"
+						"point" "2 416 16 0"
+						"point" "3 384 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5226,6 +8357,14 @@ hidden
 				{
 					"id" "2911"
 					"plane" "(416 -16 -4) (384 -16 -4) (384 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 -16 -4"
+						"point" "1 384 -16 -4"
+						"point" "2 384 -16 0"
+						"point" "3 416 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5250,6 +8389,14 @@ hidden
 				{
 					"id" "2922"
 					"plane" "(416 16 -4) (416 -16 -4) (448 -16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 16 -4"
+						"point" "1 416 -16 -4"
+						"point" "2 448 -16 -4"
+						"point" "3 448 16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5261,6 +8408,14 @@ hidden
 				{
 					"id" "2921"
 					"plane" "(416 -16 0) (416 16 0) (448 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 -16 0"
+						"point" "1 416 16 0"
+						"point" "2 448 16 0"
+						"point" "3 448 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5272,6 +8427,14 @@ hidden
 				{
 					"id" "2920"
 					"plane" "(416 -16 -4) (416 16 -4) (416 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 -16 -4"
+						"point" "1 416 16 -4"
+						"point" "2 416 16 0"
+						"point" "3 416 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5283,6 +8446,14 @@ hidden
 				{
 					"id" "2919"
 					"plane" "(448 16 -4) (448 -16 -4) (448 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 16 -4"
+						"point" "1 448 -16 -4"
+						"point" "2 448 -16 0"
+						"point" "3 448 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5294,6 +8465,14 @@ hidden
 				{
 					"id" "2918"
 					"plane" "(416 16 -4) (448 16 -4) (448 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 16 -4"
+						"point" "1 448 16 -4"
+						"point" "2 448 16 0"
+						"point" "3 416 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5305,6 +8484,14 @@ hidden
 				{
 					"id" "2917"
 					"plane" "(448 -16 -4) (416 -16 -4) (416 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 -16 -4"
+						"point" "1 416 -16 -4"
+						"point" "2 416 -16 0"
+						"point" "3 448 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5329,6 +8516,14 @@ hidden
 				{
 					"id" "2928"
 					"plane" "(448 16 -4) (448 -16 -4) (480 -16 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 16 -4"
+						"point" "1 448 -16 -4"
+						"point" "2 480 -16 -4"
+						"point" "3 480 16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5340,6 +8535,14 @@ hidden
 				{
 					"id" "2927"
 					"plane" "(448 -16 0) (448 16 0) (480 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 -16 0"
+						"point" "1 448 16 0"
+						"point" "2 480 16 0"
+						"point" "3 480 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5351,6 +8554,14 @@ hidden
 				{
 					"id" "2926"
 					"plane" "(448 -16 -4) (448 16 -4) (448 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 -16 -4"
+						"point" "1 448 16 -4"
+						"point" "2 448 16 0"
+						"point" "3 448 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5362,6 +8573,14 @@ hidden
 				{
 					"id" "2925"
 					"plane" "(480 16 -4) (480 -16 -4) (480 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 16 -4"
+						"point" "1 480 -16 -4"
+						"point" "2 480 -16 0"
+						"point" "3 480 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5373,6 +8592,14 @@ hidden
 				{
 					"id" "2924"
 					"plane" "(448 16 -4) (480 16 -4) (480 16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 16 -4"
+						"point" "1 480 16 -4"
+						"point" "2 480 16 0"
+						"point" "3 448 16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5384,6 +8611,14 @@ hidden
 				{
 					"id" "2923"
 					"plane" "(480 -16 -4) (448 -16 -4) (448 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 -16 -4"
+						"point" "1 448 -16 -4"
+						"point" "2 448 -16 0"
+						"point" "3 480 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5408,6 +8643,14 @@ hidden
 				{
 					"id" "2934"
 					"plane" "(480 -16 -4) (480 -44 -4) (508 -44 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 -16 -4"
+						"point" "1 480 -44 -4"
+						"point" "2 508 -44 -4"
+						"point" "3 508 -16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5419,6 +8662,14 @@ hidden
 				{
 					"id" "2933"
 					"plane" "(512 -48 0) (480 -48 0) (480 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 512 -48 0"
+						"point" "1 480 -48 0"
+						"point" "2 480 -16 0"
+						"point" "3 512 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5430,6 +8681,14 @@ hidden
 				{
 					"id" "2932"
 					"plane" "(508 -44 -4) (480 -44 -4) (480 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 -44 -4"
+						"point" "1 480 -44 -4"
+						"point" "2 480 -48 0"
+						"point" "3 512 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5441,6 +8700,14 @@ hidden
 				{
 					"id" "2931"
 					"plane" "(508 -16 -4) (508 -44 -4) (512 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 508 -16 -4"
+						"point" "1 508 -44 -4"
+						"point" "2 512 -48 0"
+						"point" "3 512 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5452,6 +8719,14 @@ hidden
 				{
 					"id" "2930"
 					"plane" "(480 -44 -4) (480 -16 -4) (480 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 -44 -4"
+						"point" "1 480 -16 -4"
+						"point" "2 480 -16 0"
+						"point" "3 480 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5463,6 +8738,14 @@ hidden
 				{
 					"id" "2929"
 					"plane" "(480 -16 -4) (508 -16 -4) (512 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 -16 -4"
+						"point" "1 508 -16 -4"
+						"point" "2 512 -16 0"
+						"point" "3 480 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5487,6 +8770,14 @@ hidden
 				{
 					"id" "2940"
 					"plane" "(260 -16 -4) (260 -44 -4) (288 -44 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 -16 -4"
+						"point" "1 260 -44 -4"
+						"point" "2 288 -44 -4"
+						"point" "3 288 -16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5498,6 +8789,14 @@ hidden
 				{
 					"id" "2939"
 					"plane" "(288 -48 0) (256 -48 0) (256 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 -48 0"
+						"point" "1 256 -48 0"
+						"point" "2 256 -16 0"
+						"point" "3 288 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5509,6 +8808,14 @@ hidden
 				{
 					"id" "2938"
 					"plane" "(288 -44 -4) (260 -44 -4) (256 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 -44 -4"
+						"point" "1 260 -44 -4"
+						"point" "2 256 -48 0"
+						"point" "3 288 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5520,6 +8827,14 @@ hidden
 				{
 					"id" "2937"
 					"plane" "(260 -44 -4) (260 -16 -4) (256 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 -44 -4"
+						"point" "1 260 -16 -4"
+						"point" "2 256 -16 0"
+						"point" "3 256 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5531,6 +8846,14 @@ hidden
 				{
 					"id" "2936"
 					"plane" "(288 -16 -4) (288 -44 -4) (288 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 -16 -4"
+						"point" "1 288 -44 -4"
+						"point" "2 288 -48 0"
+						"point" "3 288 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5542,6 +8865,14 @@ hidden
 				{
 					"id" "2935"
 					"plane" "(260 -16 -4) (288 -16 -4) (288 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 260 -16 -4"
+						"point" "1 288 -16 -4"
+						"point" "2 288 -16 0"
+						"point" "3 256 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5566,6 +8897,14 @@ hidden
 				{
 					"id" "2946"
 					"plane" "(320 -16 -4) (320 -44 -4) (352 -44 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 -16 -4"
+						"point" "1 320 -44 -4"
+						"point" "2 352 -44 -4"
+						"point" "3 352 -16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5577,6 +8916,14 @@ hidden
 				{
 					"id" "2945"
 					"plane" "(352 -48 0) (320 -48 0) (320 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 -48 0"
+						"point" "1 320 -48 0"
+						"point" "2 320 -16 0"
+						"point" "3 352 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5588,6 +8935,14 @@ hidden
 				{
 					"id" "2944"
 					"plane" "(352 -44 -4) (320 -44 -4) (320 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 -44 -4"
+						"point" "1 320 -44 -4"
+						"point" "2 320 -48 0"
+						"point" "3 352 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5599,6 +8954,14 @@ hidden
 				{
 					"id" "2943"
 					"plane" "(352 -16 -4) (352 -44 -4) (352 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 -16 -4"
+						"point" "1 352 -44 -4"
+						"point" "2 352 -48 0"
+						"point" "3 352 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5610,6 +8973,14 @@ hidden
 				{
 					"id" "2942"
 					"plane" "(320 -44 -4) (320 -16 -4) (320 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 -44 -4"
+						"point" "1 320 -16 -4"
+						"point" "2 320 -16 0"
+						"point" "3 320 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5621,6 +8992,14 @@ hidden
 				{
 					"id" "2941"
 					"plane" "(320 -16 -4) (352 -16 -4) (352 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 -16 -4"
+						"point" "1 352 -16 -4"
+						"point" "2 352 -16 0"
+						"point" "3 320 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5645,6 +9024,14 @@ hidden
 				{
 					"id" "2952"
 					"plane" "(288 -16 -4) (288 -44 -4) (320 -44 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 -16 -4"
+						"point" "1 288 -44 -4"
+						"point" "2 320 -44 -4"
+						"point" "3 320 -16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5656,6 +9043,14 @@ hidden
 				{
 					"id" "2951"
 					"plane" "(320 -48 0) (288 -48 0) (288 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 -48 0"
+						"point" "1 288 -48 0"
+						"point" "2 288 -16 0"
+						"point" "3 320 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5667,6 +9062,14 @@ hidden
 				{
 					"id" "2950"
 					"plane" "(320 -44 -4) (288 -44 -4) (288 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 -44 -4"
+						"point" "1 288 -44 -4"
+						"point" "2 288 -48 0"
+						"point" "3 320 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5678,6 +9081,14 @@ hidden
 				{
 					"id" "2949"
 					"plane" "(288 -44 -4) (288 -16 -4) (288 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 -44 -4"
+						"point" "1 288 -16 -4"
+						"point" "2 288 -16 0"
+						"point" "3 288 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5689,6 +9100,14 @@ hidden
 				{
 					"id" "2948"
 					"plane" "(320 -16 -4) (320 -44 -4) (320 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 320 -16 -4"
+						"point" "1 320 -44 -4"
+						"point" "2 320 -48 0"
+						"point" "3 320 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5700,6 +9119,14 @@ hidden
 				{
 					"id" "2947"
 					"plane" "(288 -16 -4) (320 -16 -4) (320 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 288 -16 -4"
+						"point" "1 320 -16 -4"
+						"point" "2 320 -16 0"
+						"point" "3 288 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5724,6 +9151,14 @@ hidden
 				{
 					"id" "2958"
 					"plane" "(352 -16 -4) (352 -44 -4) (384 -44 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 -16 -4"
+						"point" "1 352 -44 -4"
+						"point" "2 384 -44 -4"
+						"point" "3 384 -16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5735,6 +9170,14 @@ hidden
 				{
 					"id" "2957"
 					"plane" "(384 -48 0) (352 -48 0) (352 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 -48 0"
+						"point" "1 352 -48 0"
+						"point" "2 352 -16 0"
+						"point" "3 384 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5746,6 +9189,14 @@ hidden
 				{
 					"id" "2956"
 					"plane" "(384 -44 -4) (352 -44 -4) (352 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 -44 -4"
+						"point" "1 352 -44 -4"
+						"point" "2 352 -48 0"
+						"point" "3 384 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5757,6 +9208,14 @@ hidden
 				{
 					"id" "2955"
 					"plane" "(352 -44 -4) (352 -16 -4) (352 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 -44 -4"
+						"point" "1 352 -16 -4"
+						"point" "2 352 -16 0"
+						"point" "3 352 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5768,6 +9227,14 @@ hidden
 				{
 					"id" "2954"
 					"plane" "(384 -16 -4) (384 -44 -4) (384 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 -16 -4"
+						"point" "1 384 -44 -4"
+						"point" "2 384 -48 0"
+						"point" "3 384 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5779,6 +9246,14 @@ hidden
 				{
 					"id" "2953"
 					"plane" "(352 -16 -4) (384 -16 -4) (384 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 352 -16 -4"
+						"point" "1 384 -16 -4"
+						"point" "2 384 -16 0"
+						"point" "3 352 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5803,6 +9278,14 @@ hidden
 				{
 					"id" "2964"
 					"plane" "(384 -16 -4) (384 -44 -4) (416 -44 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 -16 -4"
+						"point" "1 384 -44 -4"
+						"point" "2 416 -44 -4"
+						"point" "3 416 -16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5814,6 +9297,14 @@ hidden
 				{
 					"id" "2963"
 					"plane" "(416 -48 0) (384 -48 0) (384 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 -48 0"
+						"point" "1 384 -48 0"
+						"point" "2 384 -16 0"
+						"point" "3 416 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5825,6 +9316,14 @@ hidden
 				{
 					"id" "2962"
 					"plane" "(416 -44 -4) (384 -44 -4) (384 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 -44 -4"
+						"point" "1 384 -44 -4"
+						"point" "2 384 -48 0"
+						"point" "3 416 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5836,6 +9335,14 @@ hidden
 				{
 					"id" "2961"
 					"plane" "(384 -44 -4) (384 -16 -4) (384 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 -44 -4"
+						"point" "1 384 -16 -4"
+						"point" "2 384 -16 0"
+						"point" "3 384 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5847,6 +9354,14 @@ hidden
 				{
 					"id" "2960"
 					"plane" "(416 -16 -4) (416 -44 -4) (416 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 -16 -4"
+						"point" "1 416 -44 -4"
+						"point" "2 416 -48 0"
+						"point" "3 416 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5858,6 +9373,14 @@ hidden
 				{
 					"id" "2959"
 					"plane" "(384 -16 -4) (416 -16 -4) (416 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 384 -16 -4"
+						"point" "1 416 -16 -4"
+						"point" "2 416 -16 0"
+						"point" "3 384 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5882,6 +9405,14 @@ hidden
 				{
 					"id" "2970"
 					"plane" "(416 -16 -4) (416 -44 -4) (448 -44 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 -16 -4"
+						"point" "1 416 -44 -4"
+						"point" "2 448 -44 -4"
+						"point" "3 448 -16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5893,6 +9424,14 @@ hidden
 				{
 					"id" "2969"
 					"plane" "(448 -48 0) (416 -48 0) (416 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 -48 0"
+						"point" "1 416 -48 0"
+						"point" "2 416 -16 0"
+						"point" "3 448 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5904,6 +9443,14 @@ hidden
 				{
 					"id" "2968"
 					"plane" "(448 -44 -4) (416 -44 -4) (416 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 -44 -4"
+						"point" "1 416 -44 -4"
+						"point" "2 416 -48 0"
+						"point" "3 448 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5915,6 +9462,14 @@ hidden
 				{
 					"id" "2967"
 					"plane" "(416 -44 -4) (416 -16 -4) (416 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 -44 -4"
+						"point" "1 416 -16 -4"
+						"point" "2 416 -16 0"
+						"point" "3 416 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5926,6 +9481,14 @@ hidden
 				{
 					"id" "2966"
 					"plane" "(448 -16 -4) (448 -44 -4) (448 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 -16 -4"
+						"point" "1 448 -44 -4"
+						"point" "2 448 -48 0"
+						"point" "3 448 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5937,6 +9500,14 @@ hidden
 				{
 					"id" "2965"
 					"plane" "(416 -16 -4) (448 -16 -4) (448 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 416 -16 -4"
+						"point" "1 448 -16 -4"
+						"point" "2 448 -16 0"
+						"point" "3 416 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -5961,6 +9532,14 @@ hidden
 				{
 					"id" "2976"
 					"plane" "(448 -16 -4) (448 -44 -4) (480 -44 -4)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 -16 -4"
+						"point" "1 448 -44 -4"
+						"point" "2 480 -44 -4"
+						"point" "3 480 -16 -4"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5972,6 +9551,14 @@ hidden
 				{
 					"id" "2975"
 					"plane" "(480 -48 0) (448 -48 0) (448 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 -48 0"
+						"point" "1 448 -48 0"
+						"point" "2 448 -16 0"
+						"point" "3 480 -16 0"
+					}
 					"material" "NATURE/DIRTFLOOR004C"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5983,6 +9570,14 @@ hidden
 				{
 					"id" "2974"
 					"plane" "(480 -44 -4) (448 -44 -4) (448 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 -44 -4"
+						"point" "1 448 -44 -4"
+						"point" "2 448 -48 0"
+						"point" "3 480 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 -1 0 320] 0.25"
@@ -5994,6 +9589,14 @@ hidden
 				{
 					"id" "2973"
 					"plane" "(448 -44 -4) (448 -16 -4) (448 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 -44 -4"
+						"point" "1 448 -16 -4"
+						"point" "2 448 -16 0"
+						"point" "3 448 -48 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -6005,6 +9608,14 @@ hidden
 				{
 					"id" "2972"
 					"plane" "(480 -16 -4) (480 -44 -4) (480 -48 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 480 -16 -4"
+						"point" "1 480 -44 -4"
+						"point" "2 480 -48 0"
+						"point" "3 480 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[0 1 0 -320] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -6016,6 +9627,14 @@ hidden
 				{
 					"id" "2971"
 					"plane" "(448 -16 -4) (480 -16 -4) (480 -16 0)"
+					point_data
+					{
+						"numpts" "4"
+						"point" "0 448 -16 -4"
+						"point" "1 480 -16 -4"
+						"point" "2 480 -16 0"
+						"point" "3 448 -16 0"
+					}
 					"material" "ANIM_WP/FRAMEWORK/BACKPANELS"
 					"uaxis" "[1 0 0 0] 0.25"
 					"vaxis" "[0 0 -1 0] 0.25"
@@ -6064,8 +9683,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "34 -34 -76"
 	editor
 	{
@@ -6099,8 +9720,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "94 -34 -76"
 	editor
 	{
@@ -6134,8 +9757,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "94 -94 -76"
 	editor
 	{
@@ -6169,8 +9794,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "34 -94 -76"
 	editor
 	{
@@ -6204,8 +9831,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "34 -154 -76"
 	editor
 	{
@@ -6239,8 +9868,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "94 -154 -76"
 	editor
 	{
@@ -6274,8 +9905,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "154 -154 -76"
 	editor
 	{
@@ -6309,8 +9942,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "154 -94 -76"
 	editor
 	{
@@ -6344,8 +9979,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "154 -34 -76"
 	editor
 	{
@@ -6379,8 +10016,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "154 26 -76"
 	editor
 	{
@@ -6414,8 +10053,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "94 26 -76"
 	editor
 	{
@@ -6449,8 +10090,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "34 26 -76"
 	editor
 	{
@@ -6484,8 +10127,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "-26 26 -76"
 	editor
 	{
@@ -6519,8 +10164,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "-26 -34 -76"
 	editor
 	{
@@ -6554,8 +10201,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "-26 -94 -76"
 	editor
 	{
@@ -6589,8 +10238,10 @@ entity
 	"model" "models/anim_wp/framework/squarebeam_off_mini_both.mdl"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
+	"scale" "1 1 1"
 	"skin" "1"
 	"solid" "6"
+	"uniformscale" "1"
 	"origin" "-26 -154 -76"
 	editor
 	{
