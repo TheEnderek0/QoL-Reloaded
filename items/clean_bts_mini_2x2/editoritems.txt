@@ -9,7 +9,7 @@
 			"Name"		"BTS Wall Opening 2x2 A"
 			"Model"
 			{
-				"ModelName"	"turret.3ds"
+				"ModelName"	"wall_opening_2x2a.3ds"
 			}
 			"Palette"
 			{
@@ -29,7 +29,7 @@
 			"Name"		"BTS Wall Opening 2x2 B"
 			"Model"
 			{
-				"ModelName"	"turret.3ds"
+				"ModelName"	"wall_opening_2x2b.3ds"
 			}
 			"Palette"
 			{
