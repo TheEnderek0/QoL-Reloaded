@@ -9,7 +9,7 @@
 			"Name"		"BTS Opening 5x6"
 			"Model"
 			{
-				"ModelName"	"turret.3ds"
+				"ModelName"	"opening_5x5.3ds" //Ik naming error lol
 			}
 			"Palette"
 			{
