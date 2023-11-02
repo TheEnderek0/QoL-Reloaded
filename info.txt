@@ -126,17 +126,17 @@
 			}
 		}
 	}
-"Item"
-	{
-	"ID" "QOL_FOLIAGE_WALL"
-	"Version"
-		{
-		"Styles"
-			{
-			"BEE2_CLEAN"	"foliage_wall"
-			}
-		}
-	}
+//"Item"
+//	{
+//	"ID" "QOL_FOLIAGE_WALL"
+//	"Version"
+//		{
+//		"Styles"
+//			{
+//			"BEE2_CLEAN"	"foliage_wall"
+//			}
+//		}
+//	}
 "Item"
 	{
 	"ID" "QOL_FOLIAGE_CEIL"
